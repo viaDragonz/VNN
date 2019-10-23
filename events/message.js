@@ -1,7 +1,6 @@
 module.exports = (client, message) => {
 	// Ignore all bots
 	if (message.author.bot) return;
-	if (!message.author.id === 256137868513116162) return message.reply("You're being ratelimited.");
 	// Ignore messages not starting with the prefix (in config.json)
 	if (message.content.indexOf(client.config.prefix) !== 0) return;
 	// Our standard argument/command name definition.
