@@ -9,7 +9,9 @@ exports.run = (client, message, args) => {
 
 try {
       get('https://dog.ceo/api/breeds/image/random').then(res => {
-        return message.channel.send(res.body.message);
+        return message.channel.send("", {
+    file: res.body.message
+});
       });
     } catch(err) {
       return message.channel.send(error.stack);
