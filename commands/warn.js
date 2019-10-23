@@ -1,10 +1,11 @@
+const config = require("../config.json");
 const uuidv4 = require('uuid/v4');
 const mysql = require('mysql');
 const connection = mysql.createConnection({
   host     : 'localhost',
   port     : '3306',
   user     : 'root',
-  password : `${client.config.dbpassword}`,
+  password : `${config.dbpassword}`,
   database : 'modbot',
   charset : 'utf8mb4'
 })
