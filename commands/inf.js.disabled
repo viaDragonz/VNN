@@ -1,0 +1,29 @@
+const uuidv4 = require('uuid/v4');
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host     : 'localhost',
+  port     : '3306',
+  user     : 'root',
+  password : 'AidenJayDB',
+  database : 'modbot',
+  charset : 'utf8mb4'
+})
+
+
+exports.run = (client, message, args) => {
+
+ const modRole = message.guild.roles.find(role => role.name === "Mods");
+  if (!modRole)
+    return console.log("The Mods role does not exist");
+
+  if (!message.member.roles.has(modRole.id))
+    return message.reply("You can't use this command.");
+
+
+
+connection.query('SELECT * FROM Kytten WHERE Message_ID = ?', [args[0]], function(err, rows, result) {
+
+
+});
+
+}

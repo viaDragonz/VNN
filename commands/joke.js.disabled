@@ -1,0 +1,19 @@
+const fs = require('fs');
+const http = require('http');
+var request = require('request');
+var querystring = require('querystring');
+
+
+exports.run = (client, message, args) => {
+
+request({
+    headers: {
+      'Accept': 'application/json'
+    },
+    uri: 'https://icanhazdadjoke.com',
+    method: 'get'
+  }, function (err, res, body) {
+    console.log(res.body.joke)
+  });
+
+}
