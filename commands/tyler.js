@@ -69,7 +69,21 @@ const tyler = [
 "https://cdn.discordapp.com/attachments/258324481074921472/631332446956290058/pleasegaben.jpg",
 "https://cdn.discordapp.com/attachments/258324481074921472/631386170877542401/unknown.png",
 "https://cdn.discordapp.com/attachments/628054414170652675/631563501545979962/JPEG_20191009_144739.jpg",
-"https://cdn.discordapp.com/attachments/628054414170652675/631582647130521610/JPEG_20191009_160342.jpg"
+"https://cdn.discordapp.com/attachments/628054414170652675/631582647130521610/JPEG_20191009_160342.jpg",
+"https://cdn.discordapp.com/attachments/258324481074921472/636588526443560980/JPEG_20191023_113508.jpg",
+"https://cdn.discordapp.com/attachments/628054414170652675/635889133126025216/ceofreak.png",
+"https://cdn.discordapp.com/attachments/628054414170652675/635885530546044949/EHaRkoQWsAA7zw_.png",
+"https://cdn.discordapp.com/attachments/628054414170652675/634601828914561034/tylerecstatic.png",
+"https://cdn.discordapp.com/attachments/628054414170652675/634601588668891156/tyler_portal.jpg",
+"https://media.discordapp.net/attachments/628054414170652675/634601366916169749/tyler_axe.jpg",
+"https://cdn.discordapp.com/attachments/258324481074921472/588075637106016256/3ce6b116f4d51bf461c0614e9263eba6.png",
+"https://cdn.discordapp.com/attachments/258324481074921472/587367909089738760/unknown.png",
+"https://cdn.discordapp.com/attachments/628054414170652675/634434191731326977/IMG_20191017_124847.jpg",
+"https://media.discordapp.net/attachments/258324481074921472/634210729628663808/image0.jpg",
+"https://cdn.discordapp.com/attachments/258324481074921472/633750524440608768/IMG_20191013_205325_01.jpg",
+"https://cdn.discordapp.com/attachments/258324481074921472/632707762580750344/avagagagaz.PNG",
+"https://cdn.discordapp.com/attachments/579481334657974273/632337980278964224/000046.jpg",
+"https://cdn.discordapp.com/attachments/628054414170652675/631874464812105763/best.png"
 ];
 
 message.channel.send("", {
