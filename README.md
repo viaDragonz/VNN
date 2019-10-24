@@ -60,3 +60,8 @@ This command is not documented.
 
 ### **.tylernudes**
 Denied
+
+# **Collaborators**
+ACFC#0805
+Jota#7661
+2Eggs#1337
