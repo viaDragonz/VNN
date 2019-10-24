@@ -87,6 +87,15 @@ exports.run = (client, message, args) => {
 		"https://cdn.discordapp.com/attachments/63670672468580766/637053972732969005/EHrUTHbXkAAxwH-.png",
 		"https://cdn.discordapp.com/attachments/258324481074921472/637052472401330197/JPEG_20191024_181856.jpg",
 		"https://cdn.discordapp.com/attachments/258324481074921472/637055585489125388/AnVagthp1PXMAAAAAElFTkSuQmCC.png"
+        "https://cdn.discordapp.com/attachments/258324481074921472/637053168890544138/unknown.png",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052689657757736/JPEG_20191024_181933.jpg",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052374489235476/JPEG_20191024_181831.jpg",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052315261599755/JPEG_20191024_181819.jpg",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052262018973736/JPEG_20191024_181804.jpg",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052187318550579/unknown.png",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052174085652490/JPEG_20191024_181744.jpg",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637052111762227216/JPEG_20191024_181728.jpg",
+        "https://cdn.discordapp.com/attachments/258324481074921472/637054516348583936/JPEG_20191024_182659.jpg"
 
 	];
 	message.channel.send("", {
