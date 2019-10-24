@@ -29,7 +29,7 @@ Kick the user. This will post a kick message in the Mod Logs Channel.
 Warn the user. This will post a warn message in the Mod Logs Channel.
 
 ## **.mute**
-```.mute @CoolGuy#0000 This is a reason!```
+	```.mute @CoolGuy#0000 This is a reason!```
 
 Mute the user. This will post a mute message in the Mod Logs Channel.
 
@@ -55,9 +55,6 @@ Pong!
 
 ## **.reload**
 For developers only. When you modify a command, you can use the reload command to clear the cache, allowing for the updates to take effect without a bot restart.
-
-## **.tylernudes**
-Denied.
 
 ## **.avatar**
 When used, this will get your account's avatar.
