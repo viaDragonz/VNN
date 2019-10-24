@@ -5,7 +5,7 @@ const {
 } = require('discord.js');
 const Enmap = require("enmap");
 const fs = require("fs");
-//const webhook = new WebhookClient(`635656739714236426`, `l6nHdXB_fscDDGobb4a38aaOcEK0J2ns-i9Mem6lPRCQILd245z7QXZWz_JvOh2P4pg4`);
+//const webhook = new WebhookClient(`id`, `token`);
 //The webhook has been disabled.
 const client = new Client();
 const config = require("./config.json");
