@@ -61,6 +61,11 @@ This command is not documented.
 ### **.tylernudes**
 Denied.
 
+### **.avatar**
+When used this will get your account's avatar..
+
+if you mention a user it will get the avatar of that user. `.avatar @CoolGuy#0000` 
+
 # **Collaborators**
 **ACFC#0805**
 
