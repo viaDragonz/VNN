@@ -11,7 +11,7 @@ const client = new Client();
 const config = require("./config.json");
 // We also need to make sure we're attaching the config to the CLIENT so it's accessible everywhere!
 client.config = config;
-client.webhook = webhook;
+//client.webhook = webhook;
 fs.readdir("./events/", (err, files) => {
 	if (err) return console.error(err);
 	files.forEach(file => {
