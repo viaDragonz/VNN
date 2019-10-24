@@ -33,6 +33,11 @@ Warn the user. This will post a warn message in the Mod Logs Channel.
 
 Mute the user. This will post a mute message in the Mod Logs Channel.
 
+## **.unmute**
+```.unmute @CoolGuy#0000 This is a reason!```
+
+Unmute the user.
+
 ## **.cat**
 Post a image of a cute cat.
 
