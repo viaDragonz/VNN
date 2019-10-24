@@ -6,7 +6,7 @@ Post a random image of Tyler McVicker.
 ## **.age**
 When used, this will get the date your account was created.
 
-If you mention a user,it will get the age of said user. `.age @CoolGuy#0000` 
+If you mention a user, it will get the age of said user. `.age @CoolGuy#0000` 
 
 ## **.ban**
 ```.ban @CoolGuy#0000 This is a reason!```
@@ -38,22 +38,13 @@ Post a image of a cute dog.
 This will post a random fact. Most likely will be in german.
 
 ## **.fortune**
-Its like a digital fortune cookie! :)
-
-### **.joke**
-This command is not documented.
-
-### **.inf**
-This command is not documented.
+It's like a digital fortune cookie! :)
 
 ## **.ping**
 Pong!
 
 ## **.reload**
 For developers only. When you modify a command, you can use the reload command to clear the cache, allowing for the updates to take effect without a bot restart.
-
-## **.speed**
-This command is not documented.
 
 ## **.tylernudes**
 Denied.
