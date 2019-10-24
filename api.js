@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
 })
 
 app.get('/info', function(req, res) {
-	res.send(`VNN's infractions API`)
+	res.send(`VNN's Bot API API`)
 });
 
 app.get('/bans', function(req, res) {
