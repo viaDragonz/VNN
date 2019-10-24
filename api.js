@@ -1,3 +1,4 @@
+const config = require("./config.json");
 var express = require('express');
 var app = express();
 const mysql = require('mysql');
@@ -31,4 +32,4 @@ app.get('/mutes', function(req, res) {
 });
 
 
-app.listen(6969);
+app.listen(config.apiPort);
