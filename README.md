@@ -66,6 +66,12 @@ When used this will get your account's avatar..
 
 if you mention a user it will get the avatar of that user. ```.avatar @CoolGuy#0000``` 
 
+### **.coin**
+Flip a coin! 
+
+### **.dice**
+Role some dice!
+
 # **Collaborators**
 **ACFC#0805**
 
