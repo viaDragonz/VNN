@@ -62,6 +62,8 @@ This command is not documented.
 Denied
 
 # **Collaborators**
-ACFC#0805
-Jota#7661
-2Eggs#1337
+**ACFC#0805**
+
+**Jota#7661**
+
+**2Eggs#1337**
