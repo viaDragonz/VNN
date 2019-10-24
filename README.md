@@ -6,7 +6,7 @@ Post a random image of Tyler McVicker.
 ### **.age**
 When used this will get the date your account was created.
 
-if you mention a user, it will get the age of that user. `.age @CoolGuy#0000` 
+if you mention a user, it will get the age of that user. ```.age @CoolGuy#0000``` 
 
 ### **.ban**
 ```.ban @CoolGuy#0000 This is a reason!```
@@ -64,7 +64,7 @@ Denied.
 ### **.avatar**
 When used this will get your account's avatar..
 
-if you mention a user it will get the avatar of that user. `.avatar @CoolGuy#0000` 
+if you mention a user it will get the avatar of that user. ```.avatar @CoolGuy#0000``` 
 
 # **Collaborators**
 **ACFC#0805**
