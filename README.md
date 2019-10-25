@@ -76,7 +76,7 @@ Role some dice!
 
 - **Thuby#0001**
 
-# The Dumbass Awards4
+# The Dumbass Awards
 ### **Thursday October 24**
 
 **Jota** forgot a `,` in his json and caused the bot to brick for a while before it could be restarted.
