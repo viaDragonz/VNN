@@ -1,5 +1,10 @@
-const Discord = require('discord.js');
 const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
+
+const Discord = require('discord.js');
 const uuidv4 = require('uuid/v4');
 const mysql = require('mysql');
 const connection = mysql.createConnection({

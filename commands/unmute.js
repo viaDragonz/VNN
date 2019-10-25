@@ -1,4 +1,10 @@
 const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
+
+
 const uuidv4 = require('uuid/v4');
 exports.run = (client, message, [mention, ...reason]) => {
 	const modRole = message.guild.roles.find(role => role.name === "Mods");

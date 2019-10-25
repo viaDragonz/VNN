@@ -1,3 +1,10 @@
+const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
+
+
 var fortunes = require('fortunes');
 var options = {
 	isShort: true,

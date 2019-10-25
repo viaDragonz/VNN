@@ -1,3 +1,10 @@
+const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
+
+
 module.exports = (client, message) => {
 	// Ignore all bots
 	if (message.author.bot) return;

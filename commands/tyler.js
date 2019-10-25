@@ -1,3 +1,11 @@
+const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
+
+
+
 const fs = require('fs');
 const http = require('http');
 var request = require('request');
