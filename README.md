@@ -67,6 +67,8 @@ Flip a coin!
 ## **.dice**
 Role some dice!
 
+<hr>
+
 # **Collaborators**
 - **ACFC#0805**
 
@@ -76,22 +78,24 @@ Role some dice!
 
 - **Thuby#0001**
 
+<hr>
+
 # The Dumbass Awards
-### **Thursday October 24**
+### **October 24, 2019 -- Thursday**
 
 **Jota** forgot a `,` in his json and caused the bot to brick for a while before it could be restarted.
 ##### **5 dumbass points**
 
 
 # Points
-**ACFC**
+- **ACFC**
 0 Points
 
-**2Eggssss**
+- **2Eggssss**
 0 Points
 
-**Thuby**
+- **Thuby**
 0 Points
 
-**Jota**
+- **Jota**
 5 Points
