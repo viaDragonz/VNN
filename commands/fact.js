@@ -1,3 +1,8 @@
+const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
 const fs = require('fs');
 const http = require('http');
 var request = require('request');
@@ -10,6 +15,6 @@ exports.run = (client, message, args) => {
 			return message.channel.send(res.body.text);
 		});
 	} catch (err) {
-		return message.channel.send(error.stack);
+		return Sentry.captureException(err);
 	}
 }
