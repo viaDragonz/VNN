@@ -14,27 +14,27 @@ When used, this will get the date your account was created.
 If you mention a user, it will get the age of said user. `.age @CoolGuy#0000` 
 
 ## **.ban**
-    ```.ban @CoolGuy#0000 This is a reason!```
+    .ban @CoolGuy#0000 This is a reason!
 
 Ban the user. This will post a ban message in the Mod Logs Channel.
 
 ## **.kick**
-    ```.kick @CoolGuy#0000 This is a reason!```
+    .kick @CoolGuy#0000 This is a reason!
 
 Kick the user. This will post a kick message in the Mod Logs Channel.
 
 ## **.warn**
-    ```.warn @CoolGuy#0000 This is a reason!```
+    .warn @CoolGuy#0000 This is a reason!
 
 Warn the user. This will post a warn message in the Mod Logs Channel.
 
 ## **.mute**
-	```.mute @CoolGuy#0000 This is a reason!```
+	.mute @CoolGuy#0000 This is a reason!
 
 Mute the user. This will post a mute message in the Mod Logs Channel.
 
 ## **.unmute**
-    ```.unmute @CoolGuy#0000 This is a reason!```
+    .unmute @CoolGuy#0000 This is a reason!
 
 Unmute the user.
 
