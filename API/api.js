@@ -3,8 +3,6 @@ const Sentry = require('@sentry/node');
 Sentry.init({
 	dsn: `${config.dsn}`
 });
-
-
 var express = require('express');
 var app = express();
 const mysql = require('mysql');
