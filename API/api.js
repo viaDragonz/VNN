@@ -4,6 +4,7 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 var express = require('express');
+const app = express();
 var app = express();
 const mysql = require('mysql');
 const connection = mysql.createConnection({
@@ -14,6 +15,10 @@ const connection = mysql.createConnection({
     database: 'modbot',
     charset: 'utf8mb4'
 })
+
+const app = express();
+app.use(Sentry.Handlers.requestHandler());
+
 
 app.get('/info', function(req, res) {
     res.send(`VNN's Bot API API`)
@@ -75,5 +80,11 @@ app.get('/mutes', function(req, res) {
     });
 });
 
+app.use(Sentry.Handlers.errorHandler());
+
+app.use(function onError(err, req, res, next) {
+    res.statusCode = 500;
+    res.end(res.sentry + "\n");
+});
 
 app.listen(config.apiPort);
