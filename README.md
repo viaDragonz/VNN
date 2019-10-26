@@ -77,6 +77,9 @@ Flip a coin! Heads or tails?
 ## **.dice**
 Role some dice!
 
+## **.tylerdrawing**
+Post a random drawing of Tyler McVicker.
+
 <hr>
 
 # **Collaborators**
