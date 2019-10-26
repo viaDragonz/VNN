@@ -1,0 +1,54 @@
+const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+	dsn: `${config.dsn}`
+});
+
+const fs = require('fs');
+const http = require('http');
+var request = require('request');
+const {
+	get
+} = require("snekfetch");
+exports.run = (client, message, args) => {
+	const tylerdrawing = [
+		"https://cdn.discordapp.com/attachments/637468091843870720/637469013328265230/tyler_baby.png",
+		"https://cdn.discordapp.com/attachments/637468091843870720/637469065203548201/tyler_back.jpg",
+		"https://cdn.discordapp.com/attachments/637468091843870720/637469748178714624/tyler_beanie.png",
+		"https://cdn.discordapp.com/attachments/637468091843870720/637469770442080257/tyler_bonkers.png",
+		"https://cdn.discordapp.com/attachments/637468091843870720/637469801090121768/tyler_carnage.jpg",
+		"https://cdn.discordapp.com/attachments/637468091843870720/637469825257439232/tyler_concerned.png",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+        "",
+        ""
+	];
+	message.channel.send("", {
+		file: `${tylerdrawing[Math.floor(Math.random() * tylerdrawing.length)]}`
+	});
+}
