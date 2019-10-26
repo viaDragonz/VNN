@@ -1,20 +1,22 @@
 # What is this?
 
-#### **This is a custom bot built for the Valve News Network discord server.**
-You can join the discord server [here](https://discord.gg/P6s3EEh) 
+#### **This is a custom bot built for the Valve News Network Discord server.**
+You can join the Discord server [here](https://discord.gg/P6s3EEh) 
 
 <hr>
 
 # Info
 
-**Please** check out the [wiki](https://github.com/aidenjay345/VNN/wiki) for more information.
+**Please,** check out the [wiki](https://github.com/aidenjay345/VNN/wiki) for more information.
+
+Want to suggest a new command, report an improvement to an already existing command or report an error? Go to the [Issues](https://github.com/aidenjay345/VNN/issues) tab.
 
 <hr>
 
 # Bot commands
 
 ## **.tyler**
-Post a random image of Tyler McVicker.
+Post a random image of Tyler McVicker. (Want to submit a new image? Check out the [I want to submit an image to ".tyler"](https://github.com/aidenjay345/VNN/wiki/I-want-to-submit-an-image-to-%22.tyler%22) wiki page.)
 
 ## **.age**
 When used, this will get the date your account was created.
@@ -67,10 +69,10 @@ For developers only. When you modify a command, you can use the reload command t
 ## **.avatar**
 When used, this will get your account's avatar.
 
-If you mention a user, it will get the avatar of said user. `.avatar @CoolGuy#0000` 
+If you mention a user, it will get the avatar of said user. e.g.: ```.avatar @CoolGuy#0000```
 
-## **.coin**
-Flip a coin! 
+## **.coinflip**
+Flip a coin! Heads or tails?
 
 ## **.dice**
 Role some dice!
