@@ -5,6 +5,12 @@ You can join the discord server [here](https://discord.gg/P6s3EEh)
 
 <hr>
 
+# INFO
+
+**Pleae** cheack out the [wiki](https://github.com/aidenjay345/VNN/wiki) for more information.
+
+<hr>
+
 # Bot commands
 
 ## **.tyler**
