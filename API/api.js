@@ -5,7 +5,6 @@ Sentry.init({
 });
 var express = require('express');
 const app = express();
-var app = express();
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -16,7 +15,6 @@ const connection = mysql.createConnection({
     charset: 'utf8mb4'
 })
 
-const app = express();
 app.use(Sentry.Handlers.requestHandler());
 
 
