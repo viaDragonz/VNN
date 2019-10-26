@@ -1,12 +1,12 @@
 const config = require("../config.json");
 const Sentry = require('@sentry/node');
 Sentry.init({
-	dsn: `${config.dsn}`
+    dsn: `${config.dsn}`
 });
 
 
 exports.run = (client, message, args) => {
-	let coinFlip = ["Heads", "Tails"];
-	let coinFlipCalc = Math.round(Math.random());
-	message.channel.send("You flipped a coin and got " + coinFlip[coinFlipCalc] + "!")
+    let coinFlip = ["Heads", "Tails"];
+    let coinFlipCalc = Math.round(Math.random());
+    message.channel.send("You flipped a coin and got " + coinFlip[coinFlipCalc] + "!")
 }
