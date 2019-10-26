@@ -1,6 +1,7 @@
 {
-	"token": "",
-	"prefix": ".",
-	"dbpassword": "",
-	"apiPort": ""
+    "token": "",
+    "prefix": ".",
+    "dbpassword": "",
+    "apiPort": "",
+    "dsn": ""
 }
