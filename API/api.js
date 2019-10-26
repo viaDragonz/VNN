@@ -32,7 +32,7 @@ app.get('/bans', function(req, res) {
             if (!rows.length) {
                 res.send(`[{"success":"false","error":"no bans"},"errorcode":"1300"}]`)
             } else {
-                res.send(`[{"userid":"${rows[0].userid}","modid":"${rows[0].modid}","banid":"${rows[0].banid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
+                res.send(`[{"success": "true","userid":"${rows[0].userid}","modid":"${rows[0].modid}","banid":"${rows[0].banid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
         }
     });
@@ -60,7 +60,7 @@ app.get('/kicks', function(req, res) {
             if (!rows.length) {
                 res.send(`[{"success":"false","error":"no kicks"},"errorcode":"1300"}]`)
             } else {
-                res.send(`[{"userid":"${rows[0].userid}","modid":"${rows[0].modid}","kickid":"${rows[0].kickid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
+                res.send(`[{"success":"true","userid":"${rows[0].userid}","modid":"${rows[0].modid}","kickid":"${rows[0].kickid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
         }
     });
@@ -74,7 +74,7 @@ app.get('/mutes', function(req, res) {
             if (!rows.length) {
                 res.send(`[{"success":"false","error":"no mutes"},"errorcode":"1300"}]`)
             } else {
-                res.send(`[{"userid":"${rows[0].userid}","modid":"${rows[0].modid}","muteid":"${rows[0].muteid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
+                res.send(`[{"success":"true","userid":"${rows[0].userid}","modid":"${rows[0].modid}","muteid":"${rows[0].muteid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
         }
     });
