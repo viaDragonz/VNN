@@ -17,7 +17,7 @@ exports.run = (client, message, args) => {
     } else {
         try {
             get('https://meowfacts.herokuapp.com/').then(res => {
-                return message.channel.send(res.body.text);
+                return message.channel.send(res.body.data);
             });
         } catch (err) {
             return Sentry.captureException(err);
