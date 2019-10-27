@@ -114,10 +114,16 @@ Is HLVR out?
 **Jota** forgot a `,` in his json and caused the bot to brick for a while before it could be restarted.
 ##### **5 dumbass points**
 
+### ** October 27, 2019 -- Sunday**
+
+**aidenjay345** fucked up a url in the readme TWICE. Like damn.
+##### **10 dumbass points**
+
+*5 points for each fuckup*
 
 # Points
 - **ACFC**
-0 Points
+10 Points
 
 - **2Eggssss**
 0 Points
