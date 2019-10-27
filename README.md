@@ -1,4 +1,4 @@
-<center> ![vnn logo](https://i.imgur.com/nu8W9OV.png) </center>
+![vnn logo](https://i.imgur.com/nu8W9OV.png)
 
 # What is this?
 
