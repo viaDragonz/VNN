@@ -6,9 +6,6 @@ Sentry.init({
 
 
 
-const fs = require('fs');
-const http = require('http');
-var request = require('request');
 const {
     get
 } = require("snekfetch");
