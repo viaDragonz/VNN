@@ -7,7 +7,7 @@ Sentry.init({
 
 module.exports = (client, message) => {
     // Ignore all bots
-
+    if (message.author.id === 328650099318325268) return;
     if (message.author.bot) return;
     // Ignore messages not starting with the prefix (in config.json)
     if (message.content.indexOf(client.config.prefix) !== 0) return;
