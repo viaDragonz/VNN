@@ -80,6 +80,9 @@ Role some dice!
 ## **.tylerdrawing**
 Post a random drawing of Tyler McVicker.
 
+## **.catfact**
+Post a random cat fact!
+
 <hr>
 
 # **Collaborators**
@@ -89,9 +92,10 @@ Post a random drawing of Tyler McVicker.
 
 - **2Eggs#1337**
 
-- **Thuby#0001**
+- **spooky todd#2864**
 
 <hr>
+
 
 # The Dumbass Awards
 ### **October 24, 2019 -- Thursday**
