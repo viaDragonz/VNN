@@ -31,9 +31,5 @@ function changeStyle() {
         tylerText.style.fontSize = "150px";
         tyler.style.height = "342px";
     }
-    
-    else {
-        console.log("If you see this message, your monitor is 1366x768!");
-    }
 }
 window.onload = changeStyle;
