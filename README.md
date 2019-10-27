@@ -1,10 +1,9 @@
 # What is this?
 
 #### **This is a custom bot built for the Valve News Network Discord server.**
-You can join the Discord server [here](https://discord.gg/P6s3EEh) 
+You can join the Discord server 
 
-<hr>
-
+[![NotSoSuper's Dev](https://discordapp.com/api/guilds/178313653177548800/widget.png?style=banner2)](https://discord.gg/QQENx4f)
 # Info
 
 **Please,** check out the [wiki](https://github.com/aidenjay345/VNN/wiki) for more information.
