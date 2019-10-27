@@ -89,7 +89,13 @@ exports.run = (client, message, args) => {
             "Go make me some!",
             "The power of the sun... In the palm of my hand.",
             "The river. Drown it.",
-            "My Rosie's dead. My dream is dead. And these... things... should be at the bottom of the river. Along with me."
+            "My Rosie's dead. My dream is dead. And these... things... should be at the bottom of the river. Along with me.",
+            "Before we start, did anyone lose a bunch of $20 bills rolled up in a rubber band? Because we found the rubber band.",
+            "Precious tritium is the fuel that makes this project go...",
+            "I'm gonna put some dirt in your eye.",
+            "See ya, chump!",
+            "WHAT THE HELL?!",
+            "That's what my momma's always saying! I just never actually believed her!"
         ];
         message.channel.send(`${spiderman[Math.floor(Math.random() * spiderman.length)]}`)
         talkedRecently.add(message.author.id);
