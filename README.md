@@ -1,3 +1,5 @@
+<center>![vnn logo](https://i.imgur.com/nu8W9OV.png)</center>
+
 # What is this?
 
 #### **This is a custom bot built for the Valve News Network Discord server.**
