@@ -95,7 +95,18 @@ exports.run = (client, message, args) => {
             "I'm gonna put some dirt in your eye.",
             "See ya, chump!",
             "WHAT THE HELL?!",
-            "That's what my momma's always saying! I just never actually believed her!"
+            "That's what my momma's always saying! I just never actually believed her!",
+            "Hi? What's Hi? Can I spend it?",
+            "YOU'RE A HACK!",
+            "Sometimes, to do what's right, we have to be steady, and give up the things we want the most. Even our dreams.",
+            "Intelligence is not a privilege, it's a gift. And you use it for the good of mankind.",
+            "You have a train to catch.",
+            "Listen... Listen to me now. Listen to ME now!",
+            "Dear, we agreed to put on a wedding, not go into bankruptcy... Caviar? Who are we inviting, the Czar? Get some cheese and crackers... some of those little cocktail weenies.",
+            "Flowers? How much? If you spend any more on this thing, you can pick the daisies off my grave!",
+            "Guy named Otto Octavius winds up with eight limbs. What are the odds?",
+            "Well, I was thinking maybe the Bugle could show another side of New York for a change.",
+            "That's outrageous! Done. Give this to the girl. Thank you, bye-bye."
         ];
         message.channel.send(`${spiderman[Math.floor(Math.random() * spiderman.length)]}`)
         talkedRecently.add(message.author.id);
