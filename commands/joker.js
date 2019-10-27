@@ -44,7 +44,16 @@ exports.run = (client, message, args) => {
             "You see, I'm a guy of simple taste. I enjoy, uh, dynamite, and gunpowder…and gasoline!",
             "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
             "I took Gotham's white knight... And brought him down to our level!",
-            "If you're good at something, never do it for free."
+            "If you're good at something, never do it for free.",
+            "How about a magic trick?",
+            "I'll make this pencil... disappear.",
+            "And by the way, the suit wasn't cheap. You ought to know, you bought it...",
+            "I know why you're holding your little group therapy sessions in broad daylight.",
+            "It's simple. We, uhh, kill the Batman.",
+            "Uhh, Half.",
+            "How about alive?",
+            "Now, our organization is small, but we've got a lot of potential for *aggressive expansion*...",
+            "Batman must take off his mask, and turn himself in. Every day he doesn't... people will die. Starting tonight. I'm a man of my word."
         ];
         message.channel.send(`${joker[Math.floor(Math.random() * joker.length)]}`)
         talkedRecently.add(message.author.id);
