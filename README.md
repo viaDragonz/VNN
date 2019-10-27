@@ -93,7 +93,7 @@ Is HLVR out?
 Post a random spiderman quote.
 
 ## **.joker**
-Post a random joker quote.
+Post a random Joker quote from The Dark Knight (2007). Introduce a little anarchy!
 
 <hr>
 
