@@ -89,6 +89,12 @@ Is HLVR out?
 
 ![Pherhaps](https://i.imgur.com/oFNRw4u.png)
 
+## **.spiderman**
+Post a random spiderman quote.
+
+## **.joker**
+Post a random joker quote.
+
 <hr>
 
 # **Collaborators**
