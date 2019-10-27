@@ -75,7 +75,7 @@ exports.run = (client, message, args) => {
             "M.J. and I... we're gonna have a hell of a time!",
             "I have a father. His name was Ben Parker.",
             "Godspeed, Spider-Man.",
-            "I swear on my father's grave, Spider-Man will pay."
+            "I swear on my father's grave, Spider-Man will pay.",
             "Whatever life holds in store for me... I will never forget these words. 'With great power, comes great responsibility.' This is my gift. My curse. Who am I? I'm Spider-Man.",
             "What have you done... WHAT HAVE YOU DONE?",
             "I'm sorry, Mr. Aziz. There was a disturbance.",
