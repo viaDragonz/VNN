@@ -3,7 +3,7 @@
 #### **This is a custom bot built for the Valve News Network Discord server.**
 Join the Discord server!
 
-[![VNN Discord](https://discordapp.com/api/guilds/258324481074921472/widget.png?style=banner2)](https://discord.gg/QQENx4f)
+[![VNN Discord](https://discordapp.com/api/guilds/258324481074921472/widget.png?style=banner2)](https://discord.gg/P6s3EEh)
 # Info
 
 **Please,** check out the [wiki](https://github.com/aidenjay345/VNN/wiki) for more information.
