@@ -92,10 +92,12 @@ Post a random cat fact!
 
 - **2Eggs#1337**
 
+<hr>
+
+# **Contributors**
 - **spooky todd#2864**
 
 <hr>
-
 
 # The Dumbass Awards
 ### **October 24, 2019 -- Thursday**
