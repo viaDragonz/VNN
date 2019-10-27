@@ -1,7 +1,7 @@
 # What is this?
 
 #### **This is a custom bot built for the Valve News Network Discord server.**
-You can join the Discord server 
+Join the Discord server!
 
 [![NotSoSuper's Dev](https://discordapp.com/api/guilds/258324481074921472/widget.png?style=banner2)](https://discord.gg/QQENx4f)
 # Info
