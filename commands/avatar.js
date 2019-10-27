@@ -4,11 +4,21 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
+const talkedRecently = new Set();
+
 exports.run = (client, message, [mention, ...reason]) => {
-    const avatarMember = message.mentions.members.first();
-    if (message.mentions.members.size === 0) {
-        message.reply(message.author.avatarURL)
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
     } else {
-        message.channel.send(avatarMember.user.avatarURL)
+        const avatarMember = message.mentions.members.first();
+        if (message.mentions.members.size === 0) {
+            message.reply(message.author.avatarURL)
+        } else {
+            message.channel.send(avatarMember.user.avatarURL)
+        }
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id);
+        }, 15000);
     }
 }

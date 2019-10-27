@@ -4,9 +4,19 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
+const talkedRecently = new Set();
+
 
 exports.run = (client, message, args) => {
-    let coinFlip = ["Heads", "Tails"];
-    let coinFlipCalc = Math.round(Math.random());
-    message.channel.send("You flipped a coin and got " + coinFlip[coinFlipCalc] + "!")
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+    } else {
+        let coinFlip = ["Heads", "Tails"];
+        let coinFlipCalc = Math.round(Math.random());
+        message.channel.send("You flipped a coin and got " + coinFlip[coinFlipCalc] + "!")
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id);
+        }, 15000);
+    }
 }

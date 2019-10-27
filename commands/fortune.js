@@ -10,8 +10,18 @@ var options = {
     isShort: true,
     max: 7,
 };
+const talkedRecently = new Set();
+
 exports.run = (client, message, args) => {
-    fortunes.random(options, function(fortune) {
-        message.channel.send(fortune)
-    });
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+    } else {
+        fortunes.random(options, function(fortune) {
+            message.channel.send(fortune)
+        });
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id);
+        }, 15000);
+    }
 }

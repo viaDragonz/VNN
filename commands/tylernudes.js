@@ -5,7 +5,16 @@ Sentry.init({
 });
 
 
+const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
-    message.reply(`Nudes denied. <\:vnnCat2\:468562233174261766> `)
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+    } else {
+        message.reply(`Nudes denied. <\:vnnCat2\:468562233174261766> `)
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id);
+        }, 15000);
+    }
 }
