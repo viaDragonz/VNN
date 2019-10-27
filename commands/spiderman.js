@@ -91,9 +91,7 @@ exports.run = (client, message, args) => {
             "The river. Drown it.",
             "My Rosie's dead. My dream is dead. And these... things... should be at the bottom of the river. Along with me."
         ];
-        message.channel.send("", {
-            file: `${spiderman[Math.floor(Math.random() * spiderman.length)]}`
-        });
+        message.channel.send(`${spiderman[Math.floor(Math.random() * spiderman.length)]}`)
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
