@@ -5,7 +5,7 @@
 #### **This is a custom bot built for the Valve News Network Discord server.**
 Join the Discord server!
 
-[![VNN Discord](https://discordapp.com/api/guilds/258324481074921472/widget.png?style=banner4)](https://discord.gg/P6s3EEh)
+[![VNN Discord](https://discordapp.com/api/guilds/258324481074921472/widget.png?style=banner2)](https://discord.gg/P6s3EEh)
 # Info
 
 **Please,** check out the [wiki](https://github.com/aidenjay345/VNN/wiki) for more information.
@@ -90,7 +90,7 @@ Is HLVR out?
 ![Pherhaps](https://i.imgur.com/oFNRw4u.png)
 
 ## **.spiderman**
-Post a random spiderman quote.
+Post a random Spider-Man quote from the Sam Raimi/Tobey Maguire trilogy. Pizza time!
 
 ## **.joker**
 Post a random Joker quote from The Dark Knight (2007). Introduce a little anarchy!
