@@ -83,6 +83,9 @@ Post a random drawing of Tyler McVicker.
 ## **.catfact**
 Post a random cat fact!
 
+## **.ishlvrout**
+Is HLVR out? http://bit.ly/ishlvrout
+
 <hr>
 
 # **Collaborators**
