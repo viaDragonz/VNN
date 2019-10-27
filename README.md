@@ -137,5 +137,8 @@ Post a random Joker quote from The Dark Knight (2007). Introduce a little anarch
 - **Thuby**
 0 Points
 
+- **toddhowardguild**
+0 points
+
 - **Jota**
 5 Points
