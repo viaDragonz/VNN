@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "Default Font";
+	src: url("din1451alt.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Default Font Bold";
+	src: url("din1451alt G.ttf") format("truetype");
+}
