@@ -53,7 +53,9 @@ exports.run = (client, message, args) => {
             "Uhh, Half.",
             "How about alive?",
             "Now, our organization is small, but we've got a lot of potential for *aggressive expansion*...",
-            "Batman must take off his mask, and turn himself in. Every day he doesn't... people will die. Starting tonight. I'm a man of my word."
+            "Batman must take off his mask, and turn himself in. Every day he doesn't... people will die. Starting tonight. I'm a man of my word.",
+            "Very poor choice of words...",
+            "Hit me. Come on. Hit me. HIT ME!"
         ];
         message.channel.send(`${joker[Math.floor(Math.random() * joker.length)]}`)
         talkedRecently.add(message.author.id);
