@@ -41,7 +41,7 @@ exports.run = (client, message, args) => {
             "A little fight in you. I like that!",
             "The only sensible way to live in this world is without rules. And tonight, you're gonna break your one rule!",
             "I told you, I'm a man of my word.",
-            "You see, I'm a guy of simple taste. I enjoy, uh, dynamite, and gunpowder…and gasoline!",
+            "You see, I'm a guy of simple taste. I enjoy, uh, dynamite, and gunpowder... and gasoline!",
             "This town deserves a better class of criminal, and I'm gonna give it to 'em.",
             "I took Gotham's white knight... And brought him down to our level!",
             "If you're good at something, never do it for free.",
@@ -61,7 +61,9 @@ exports.run = (client, message, args) => {
             "Never start with the head... the victim gets fuzzy.",
             "You let five people die.",
             "Those mob fools want you gone so they can get back to the way things were. But I know the truth- there's no going back. You've changed things. Forever.",
-            "Kill you? I don't want to kill you. What would I do without you? Go back to ripping off Mob dealers? No, you... *complete me*."
+            "Kill you? I don't want to kill you. What would I do without you? Go back to ripping off Mob dealers? No, you... *complete me*.",
+            "I want my phone call.",
+            "Where's the Italian?"
         ];
         message.channel.send(`${joker[Math.floor(Math.random() * joker.length)]}`)
         talkedRecently.add(message.author.id);
