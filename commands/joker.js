@@ -55,7 +55,13 @@ exports.run = (client, message, args) => {
             "Now, our organization is small, but we've got a lot of potential for *aggressive expansion*...",
             "Batman must take off his mask, and turn himself in. Every day he doesn't... people will die. Starting tonight. I'm a man of my word.",
             "Very poor choice of words...",
-            "Hit me. Come on. Hit me. HIT ME!"
+            "Hit me. Come on. Hit me. HIT ME!",
+            "Does it depress you, Lieutenant, to know how truly alone you are?",
+            "Depending on the time, he could be in one place... or *several*.",
+            "Never start with the head... the victim gets fuzzy.",
+            "You let five people die.",
+            "Those mob fools want you gone so they can get back to the way things were. But I know the truth- there's no going back. You've changed things. Forever.",
+            "Kill you? I don't want to kill you. What would I do without you? Go back to ripping off Mob dealers? No, you... *complete me*."
         ];
         message.channel.send(`${joker[Math.floor(Math.random() * joker.length)]}`)
         talkedRecently.add(message.author.id);
