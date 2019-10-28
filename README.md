@@ -76,7 +76,7 @@ If you mention a user, it will get the avatar of said user. e.g.: ```.avatar @Co
 Flip a coin! Heads or tails?
 
 ## **.dice**
-Role some dice!
+Roll the dice, see where it takes you...
 
 ## **.tylerdrawing**
 Post a random drawing of Tyler McVicker.
@@ -125,7 +125,7 @@ Post a random Joker quote from The Dark Knight (2007). Introduce a little anarch
 **aidenjay345** fucked up a url in the readme TWICE. Like damn.
 ##### **10 dumbass points**
 
-*5 points for each fuckup*
+*5 points for each fuck-up*
 
 # Points
 - **ACFC**
