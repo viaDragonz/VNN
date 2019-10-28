@@ -106,7 +106,11 @@ exports.run = (client, message, args) => {
             "Flowers? How much? If you spend any more on this thing, you can pick the daisies off my grave!",
             "Guy named Otto Octavius winds up with eight limbs. What are the odds?",
             "Well, I was thinking maybe the Bugle could show another side of New York for a change.",
-            "That's outrageous! Done. Give this to the girl. Thank you, bye-bye."
+            "That's outrageous! Done. Give this to the girl. Thank you, bye-bye.",
+            "REENT!",
+            "Give me rent!",
+            "This is free country, not rent free country.",
+            "You'll get your rent when you FIX THIS **DAMN DOOR!**"
         ];
         message.channel.send(`${spiderman[Math.floor(Math.random() * spiderman.length)]}`)
         talkedRecently.add(message.author.id);
