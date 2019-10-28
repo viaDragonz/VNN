@@ -50,7 +50,7 @@ exports.run = (client, message, args) => {
             "And by the way, the suit wasn't cheap. You ought to know, you bought it...",
             "I know why you're holding your little group therapy sessions in broad daylight.",
             "It's simple. We, uhh, kill the Batman.",
-            "Uhh, Half.",
+            "Uhh, half.",
             "How about alive?",
             "Now, our organization is small, but we've got a lot of potential for *aggressive expansion*...",
             "Batman must take off his mask, and turn himself in. Every day he doesn't... people will die. Starting tonight. I'm a man of my word.",
