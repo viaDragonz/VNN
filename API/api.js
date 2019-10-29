@@ -1,13 +1,13 @@
+const express = require('express');
+const app = express();
+const mysql = require('mysql');
 const config = require("../config.json");
 const Sentry = require('@sentry/node');
 Sentry.init({
     dsn: `${config.dsn}`
 });
-var express = require('express');
-const app = express();
-const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: '192.168.1.218',
     port: '3306',
     user: 'root',
     password: `${config.dbpassword}`,
