@@ -110,7 +110,11 @@ exports.run = (client, message, args) => {
             "REENT!",
             "Give me rent!",
             "This is free country, not rent free country.",
-            "You'll get your rent when you FIX THIS **DAMN DOOR!**"
+            "You'll get your rent when you FIX THIS **DAMN DOOR!**",
+            "He is... good boy.",
+            "That wasn't cool.",
+            "Joe's 29-Minute-Guarantee is a promise, man. I know to you, Parker, a promise means nothing... But to me, it's serious.",
+            "***Oh.***"
         ];
         message.channel.send(`${spiderman[Math.floor(Math.random() * spiderman.length)]}`)
         talkedRecently.add(message.author.id);
