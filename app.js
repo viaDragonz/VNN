@@ -1,3 +1,6 @@
+const express = require('express');
+json = require('express-json');
+const app = express()
 const config = require("./config.json");
 const Sentry = require('@sentry/node');
 Sentry.init({
@@ -34,4 +37,12 @@ fs.readdir("./commands/", (err, files) => {
         client.commands.set(commandName, props);
     })
 });
+
+app.get('/status', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(`[{ "success":"true","status":"online","statuscode":"3400" }]`)
+});
+
+app.listen(config.statuscheck_port);
+
 client.login(config.token);

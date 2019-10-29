@@ -1,5 +1,12 @@
+const fs = require('fs');
+const http = require('http');
+var request = require('request');
+const {
+    get
+} = require("snekfetch");
 const express = require('express');
-const app = express();
+json = require('express-json');
+const app = express()
 const mysql = require('mysql');
 const config = require("../config.json");
 const Sentry = require('@sentry/node');
@@ -17,18 +24,18 @@ const connection = mysql.createConnection({
 
 app.use(Sentry.Handlers.requestHandler());
 
-
-app.get('/info', function(req, res) {
+app.get('/info', function (req, res) {
     res.send(`VNN's Bot API API`)
 });
 
-app.get('/bans', function(req, res) {
-    connection.query('SELECT * FROM bans WHERE userid = ? ', [req.query.userid], function(err, rows, result) {
+app.get('/bans', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    connection.query('SELECT * FROM bans WHERE userid = ? ', [req.query.userid], function (err, rows, result) {
         if (req.query.userid === ``) {
-            res.send(`[{"success":"false","error":"no userid provided"},"errorcode":"1100"}]`)
+            res.send(`[{"success":"false","error":"no userid provided","errorcode":"1100"}]`)
         } else {
             if (!rows.length) {
-                res.send(`[{"success":"false","error":"no bans"},"errorcode":"1300"}]`)
+                res.send(`[{"success":"false","error":"no bans","errorcode":"1300"}]`)
             } else {
                 res.send(`[{"success": "true","userid":"${rows[0].userid}","modid":"${rows[0].modid}","banid":"${rows[0].banid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
@@ -36,13 +43,14 @@ app.get('/bans', function(req, res) {
     });
 });
 
-app.get('/warns', function(req, res) {
-    connection.query('SELECT * FROM warnings WHERE userid = ?', [req.query.userid], function(err, rows, result) {
+app.get('/warns', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    connection.query('SELECT * FROM warnings WHERE userid = ?', [req.query.userid], function (err, rows, result) {
         if (req.query.userid === ``) {
-            res.send(`[{"success":"false","error":"no userid provided"},"errorcode":"1100"}]`)
+            res.send(`[{"success":"false","error":"no userid provided","errorcode":"1100"}]`)
         } else {
             if (!rows.length) {
-                res.send(`[{"success":"false","error":"no warns"},"errorcode":"1300"}]`)
+                res.send(`[{"success":"false","error":"no warns","errorcode":"1300"}]`)
             } else {
                 res.send(`[{"userid":"${rows[0].userid}","modid":"${rows[0].modid}","warningid":"${rows[0].warningid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
@@ -50,13 +58,14 @@ app.get('/warns', function(req, res) {
     });
 });
 
-app.get('/kicks', function(req, res) {
-    connection.query('SELECT * FROM kicks WHERE userid = ?', [req.query.userid], function(err, rows, result) {
+app.get('/kicks', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    connection.query('SELECT * FROM kicks WHERE userid = ?', [req.query.userid], function (err, rows, result) {
         if (req.query.userid === ``) {
-            res.send(`[{"success":"false","error":"no userid provided"},"errorcode":"1100"}]`)
+            res.send(`[{"success":"false","error":"no userid provided","errorcode":"1100"}]`)
         } else {
             if (!rows.length) {
-                res.send(`[{"success":"false","error":"no kicks"},"errorcode":"1300"}]`)
+                res.send(`[{"success":"false","error":"no kicks","errorcode":"1300"}]`)
             } else {
                 res.send(`[{"success":"true","userid":"${rows[0].userid}","modid":"${rows[0].modid}","kickid":"${rows[0].kickid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
@@ -64,18 +73,38 @@ app.get('/kicks', function(req, res) {
     });
 });
 
-app.get('/mutes', function(req, res) {
-    connection.query('SELECT * FROM mutes WHERE userid = ?', [req.query.userid], function(err, rows, result) {
+app.get('/mutes', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    connection.query('SELECT * FROM mutes WHERE userid = ?', [req.query.userid], function (err, rows, result) {
         if (req.query.userid === ``) {
-            res.send(`[{"success":"false","error":"no userid provided"},"errorcode":"1100"}]`)
+            res.send(`[{"success":"false","error":"no userid provided","errorcode":"1100"}]`)
         } else {
             if (!rows.length) {
-                res.send(`[{"success":"false","error":"no mutes"},"errorcode":"1300"}]`)
+                res.send(`[{"success":"false","error":"no mutes","errorcode":"1300"}]`)
             } else {
                 res.send(`[{"success":"true","userid":"${rows[0].userid}","modid":"${rows[0].modid}","muteid":"${rows[0].muteid}","reason":"${rows[0].reason}","date":"${rows[0].date}"}]`)
             }
         }
     });
+});
+
+app.get('/status', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    try {
+        get(`http://192.168.1.218:1414/status`).then(res2 => {
+        console.log(res2.body.statuscode)
+        if(res2.body.statuscode === "undefined") {
+            res.send(`{ "status":"offline","color":"red" }`)
+        } else {
+            if(res2.body.statuscode === "3400") {
+                res.send(`{ "status":"online","color":"green" }`)
+            }
+        }
+
+        });
+    } catch (err) {
+        return Sentry.captureException(err);
+    }
 });
 
 app.use(Sentry.Handlers.errorHandler());
