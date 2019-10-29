@@ -57,4 +57,5 @@ List all mutes on record.
 * 1300 - No results found.
 * 1200 - API endpoint under maintenance. 
 * 1100 - You did not provide a user ID.
+
 **All errors will return "success":"false"**
