@@ -1,14 +1,21 @@
+/* This is the CSS used in all pages */
+/* The pages are splitted in sections */
+
+/* =====default style for ALL pages START===== */
 body {
-    background-color: #121530;
+/*    background-color: #121530;*/
+/*    background-color: #1C2135;*/
+    background-color: darkslateblue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
     font-family: Default Font, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 #header {
-    width: 100%;
+/*    width: 100%;*/
     height: 100px;
 }
 
@@ -17,16 +24,20 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    position: relative;
+    background-color: #121530;
+/*    position: relative;*/
     height: 100%;
 }
 
 #title {
-    /* background-color: #1C2135; */
+/*    background-color: #1C2135;*/
     background-color: #FFA200;
-    width: 100%;
-    position: relative;
+/*    width: 100%;*/
+/*    position: relative;*/
     overflow: hidden;
+    font-size: 27px;
+    color: white;
+    text-align: center;
 }
 
 @keyframes rotateVNN {
@@ -44,14 +55,60 @@ body {
 }
 
 #title h1 {
-    text-align: center;
     margin: 0 auto;
-    text-shadow: 0px 0px 4.25px #000;
-    color: white;
-    font-size: 50px;
+    text-shadow: 0px 0px 5px #000;
     animation: rotateVNN ease 9s infinite;
 }
 
+/* menu */
+#menu {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #1C2135;
+    text-align: center;
+    font-family: Quantico, Arial, sans-serif;
+    font-size: 28px;
+}
+
+a {
+    color: #F2F2F2;
+    padding: 0 25 0 25px;
+    text-decoration: none;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, darkslateblue 50%, #FFA200 50%);
+    transition: background-position 0.2s;
+}
+
+#menu a:hover {
+    color: #F2F2F2;
+    background-color: darkslateblue;
+    background-position: 0% -100%;
+    transition: 0.2s;
+}
+
+.active {
+    background-position: 0% -100%;
+    color: #000;
+}
+/* menu end */
+/* =====default style for all pages END===== */
+
+
+/* =====styles for the Home page START===== */
+#main {
+    background-color: darkslateblue;
+    background-image: url(images/Spy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 250px;
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+}
+/* =====styles for the Home page END===== */
+
+
+/* =====styles for the Commands page START===== */
 #commandsbox {
     background-color: darkslateblue;
     list-style: none;
@@ -64,8 +121,8 @@ body {
     background-color: black;
     transform: rotate(1deg);
     color: white;
-    width: 290px;
-    margin: 0 auto;
+    width: 305px;
+    margin: 5px auto;
     text-align: center;
     font-size: 16px;
 }
@@ -76,7 +133,6 @@ body {
 }
 
 #commandstitle p {
-    font-size: 16x;
     margin: 0;
     padding: 5px;
 }
@@ -85,7 +141,7 @@ body {
     margin: 0 auto;
     list-style: none;
     position: relative;
-    top: 16px;
+    top: 10px;
     font-family: Quantico, IBM Plex Sans, Arial, sans-serif;
     text-align: left;
 }
@@ -125,17 +181,80 @@ body {
 }
 
 #tyler {
+    background-color: #1C2135;
     background-image: url(images/wtf.png);
     background-size: contain;
+    background-position: center;
+    background-blend-mode: color-dodge;
     width: 100%;
-    height: 125px;
-    margin: 10 auto;
+    height: 165px;
+    margin: 0 auto;
 }
 
 #tylertext {
     color: white;
     text-shadow: 3px 3px 2px #000;
     font-size: 55px;
-    margin: 0;
+    margin: 0px;
     text-align: center;
 }
+/* =====styles for the Commands page END===== */
+
+
+/* =====styles for the Bot Status page START===== */
+#site-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#engineer {
+    background-image: url(images/engineer_on.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 180px;
+    margin: 10px;
+    height: 100%;
+}
+
+#botstatus-box {
+    margin: 0px auto;
+    background-color: black;
+    width: 100.1%;
+    height: 135px;
+    color: white;
+    font-size: 45px;
+    font-family: Quantico, Arial, sans-serif;
+    text-align: right;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#botstatus-box-maintext {
+    width: 100%;
+    position: relative;
+    top: -32%;
+    left: -18%;
+}
+
+#botstatus {
+    position: relative;
+    top: -205px;
+    left: -19%;
+}
+/* =====styles for the Bot Status page END===== */
+
+
+/* =====styles for the Warn/Kick/Bans logs page START===== */
+/* NO */
+/* =====styles for the Warn/Kick/Bans logs page END===== */
+
+
+/* =====styles for the About Us page START===== */
+#site-wrapper {
+    width: 1000px;
+}
+/* =====styles for the About Us page END===== */

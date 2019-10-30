@@ -95,6 +95,12 @@ Post a random Spider-Man quote from the Sam Raimi/Tobey Maguire trilogy. Pizza t
 ## **.joker**
 Post a random Joker quote from The Dark Knight (2007). Introduce a little anarchy!
 
+## **.r2d2**
+Bleep Bloop.
+
+## **.err**
+Err 1034 Could Not Respond needs.
+ 
 <hr>
 
 # **Collaborators**
