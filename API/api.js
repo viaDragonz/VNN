@@ -90,21 +90,17 @@ app.get('/mutes', function (req, res) {
 
 app.get('/status', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
-    try {
-        get(`http://192.168.1.218:1414/status`).then(res2 => {
-        console.log(res2.body.statuscode)
-        if(res2.body.statuscode === "undefined") {
-            res.send(`{ "status":"offline","color":"red" }`)
+
+    request('http://192.168.1.218:1414/status', function (error, response, body) {
+        console.log(body)
+        if (error) {
+            res.send(`[{ "status":"offline","color":"red" }]`)
         } else {
-            if(res2.body.statuscode === "3400") {
-                res.send(`{ "status":"online","color":"green" }`)
+            if (body === `[{ "success":"true","status":"online","statuscode":"3400" }]`) {
+                res.send(`[{ "status":"online","color":"green" }]`)
             }
         }
-
-        });
-    } catch (err) {
-        return Sentry.captureException(err);
-    }
+    });
 });
 
 app.use(Sentry.Handlers.errorHandler());
