@@ -89,6 +89,7 @@ app.get('/mutes', function (req, res) {
 });
 
 app.get('/status', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
     res.setHeader('Content-Type', 'application/json');
 
     request('http://192.168.1.218:1414/status', function (error, response, body) {
