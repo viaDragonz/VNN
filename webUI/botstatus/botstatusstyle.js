@@ -1,5 +1,5 @@
-var getMonitorWidth = window.screen.width;
-//var getBrowserWidth = window.innerWidth;
+//var getMonitorWidth = window.screen.width;
+var getBrowserWidth = window.innerWidth;
 
 function changeStyle() {
     var header = document.getElementById('header');
@@ -14,7 +14,7 @@ function changeStyle() {
     var botStatus = document.getElementById('botstatus');
     //is it Offline, Online or In Maintenance?
     
-    if (getMonitorWidth <= 1024) {
+    if (getBrowserWidth <= 1024) {
         header.style.height = "85px";
         vnnLogo.style.height = "85px";
         title.style.fontSize = "20px";
@@ -33,26 +33,26 @@ function changeStyle() {
         botStatus.style.top = "-225px";
         botStatus.style.fontSize = "47px";
     }
-    if (getMonitorWidth >= 1920) {
+    if (getBrowserWidth >= 1920) {
         header.style.height = "170px";
         vnnLogo.style.height = "170px";
         title.style.fontSize = "42px";
         navMenu.style.fontSize = "45px";
         siteWrapper.style.width = "1820px";
         siteWrapper.style.height = "1000px";
-        engineer.style.backgroundSize = "610px";
+        engineer.style.backgroundSize = "600px";
         engineer.style.height = "815px";
-        engineer.style.backgroundPosition = "100px";
-        botStatusBox.style.top = "-470px";
+        engineer.style.backgroundPosition = "90px";
+        botStatusBox.style.top = "-505px";
         botStatusBox.style.left = "715px";
         botStatusBox.style.width = "1325px";
-        botStatusBox.style.height = "250px";
-        botStatusBoxMainText.style.top = "-5px";
-        botStatusBoxMainText.style.fontSize = "100px";
-        botStatus.style.top = "-245px";
-        botStatus.style.fontSize = "100px";
+        botStatusBox.style.height = "295px";
+        botStatusBoxMainText.style.top = "5px";
+        botStatusBoxMainText.style.fontSize = "107px";
+        botStatus.style.top = "-232px";
+        botStatus.style.fontSize = "107px";
     }
-    if (getMonitorWidth >= 3840) {
+    if (getBrowserWidth >= 3840) {
         header.style.height = "350px";
         vnnLogo.style.height = "350px";
         title.style.fontSize = "90px";
@@ -71,6 +71,6 @@ function changeStyle() {
         botStatus.style.top = "-250px";
         botStatus.style.fontSize = "200px";
     }
-        console.log("Your monitor width is: " + getMonitorWidth);
+        console.log("Your currently browser width is: " + getBrowserWidth);
 }
 window.onload = changeStyle;

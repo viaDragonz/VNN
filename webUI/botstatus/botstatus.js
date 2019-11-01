@@ -6,13 +6,11 @@ botStatus.onreadystatechange = function () {
     if (botStatus.responseText === '[{ "status":"online","color":"green" }]') {
         document.getElementById('botstatus').innerHTML = "ONLINE";
         document.getElementById('botstatus').style.color = "green";
-        document.getElementById('engineer').style.backgroundImage = "url('../images/engineer_on.png')";
     }
     if (botStatus.responseText === '[{ "status":"offline","color":"red" }]') {
-        document.getElementById('botstatus').style.color = "red";
-        document.getElementById('engineer').style.backgroundImage = "url('../images/engineer_off.png')";
-        document.getElementById('engineer').style.backgroundSize = "275px";
         document.getElementById('botstatus').innerHTML = "OFFLINE";
+        document.getElementById('botstatus').style.color = "red";
+        document.getElementById('engineer').style.filter = "contrast(10%)";
     }
 };
 botStatus.open("GET", "https://api-vnn.ratelimited.me/status", true);
