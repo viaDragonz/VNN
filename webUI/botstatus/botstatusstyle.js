@@ -13,7 +13,7 @@ function changeStyle() {
     //is it Offline, Online or In Maintenance?
     var botStatus = document.getElementById('botstatus');
     //is it Offline, Online or In Maintenance?
-    
+
     if (getBrowserWidth <= 1024) {
         header.style.height = "85px";
         vnnLogo.style.height = "85px";
@@ -71,6 +71,6 @@ function changeStyle() {
         botStatus.style.top = "-250px";
         botStatus.style.fontSize = "200px";
     }
-        console.log("Your currently browser width is: " + getBrowserWidth);
+    console.log("Your currently browser width is: " + getBrowserWidth);
 }
 window.onload = changeStyle;
