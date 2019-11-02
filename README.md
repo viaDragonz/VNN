@@ -100,6 +100,12 @@ Bleep Bloop.
 
 ## **.err**
 Err 1034 Could Not Respond needs.
+
+## **.bane**
+Post a random Bane quote.
+
+## **.scottpilgrim**
+Post a random Scott Pilgrim quote.
  
 <hr>
 
