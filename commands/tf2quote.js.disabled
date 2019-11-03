@@ -83,7 +83,11 @@ exports.run = (client, message, args) => {
             "MMPH MMPH MMPH MMPH!",
             //Engineer Quotes
             //Medic Quotes
+            "*Let's go practice Medicine.*",
+            "Oktoberfest!",
             //Demo Quotes
+            "Oh, they're going to have to put you back together... IN HELL!",
+            "*Drunk Rambling*,
         ];
         message.channel.send(`${tf2merc[Math.floor(Math.random() * tf2merc.length)]}`)
         talkedRecently.add(message.author.id);
