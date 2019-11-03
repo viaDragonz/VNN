@@ -43,7 +43,8 @@ exports.run = (client, message, args) => {
             "You cannot hide, coward.",
             "Go ahead and cry, baby.",
             "You are no match for me!",
-            "I promise you pain without end."
+            "I promise you pain without end.",
+            "WAAAAH!"
         ];
         message.channel.send(`${heavy[Math.floor(Math.random() * heavy.length)]}`)
         talkedRecently.add(message.author.id);
