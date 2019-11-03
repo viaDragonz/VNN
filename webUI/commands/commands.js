@@ -1,6 +1,5 @@
 //Why am I doing all of this? Because I want.
-var getMonitorWidth = window.screen.width;
-//var getBrowserWidth = window.innerWidth;
+var getBrowserWidth = window.innerWidth;
 
 function changeStyle() {
     var header = document.getElementById('header');
@@ -11,14 +10,14 @@ function changeStyle() {
     var commandsBoxPadding = document.getElementById('ulcommands');
     var tylerText = document.getElementById('tylertext');
     var tyler = document.getElementById('tyler');
-    if (getMonitorWidth <= 1024) {
+    if (getBrowserWidth <= 1024) {
         commandsBoxPadding.style.paddingLeft = "45px";
         commandsBoxPadding.style.paddingRight = "45px";
         commandsBoxPadding.style.fontSize = "20px";
         tylerText.style.fontSize = "38px";
         tyler.style.height = "91px";
     }
-    if (getMonitorWidth >= 1920) {
+    if (getBrowserWidth >= 1920) {
         header.style.height = "200px";
         vnnLogo.style.height = "200px";
         title.style.fontSize = "45px";
@@ -31,7 +30,7 @@ function changeStyle() {
         tylerText.style.fontSize = "80px";
         tyler.style.height = "182px";
     }
-    if (getMonitorWidth >= 3840) {
+    if (getBrowserWidth >= 3840) {
         commandsBoxPadding.style.paddingLeft = "150px";
         commandsBoxPadding.style.paddingRight = "150px";
         commandsBoxPadding.style.fontSize = "70px";
