@@ -14,7 +14,7 @@ const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
-        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+        message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
     } else {
         fortunes.random(options, function(fortune) {
             message.channel.send(fortune)
@@ -22,6 +22,6 @@ exports.run = (client, message, args) => {
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
-        }, 15000);
+        }, 10000);
     }
 }

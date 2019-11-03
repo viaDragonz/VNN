@@ -87,26 +87,17 @@ Post a random cat fact!
 ## **.ishlvrout**
 Is HLVR out? 
 
-![Pherhaps](https://i.imgur.com/oFNRw4u.png)
+![Perhaps](https://i.imgur.com/oFNRw4u.png)
 
 ## **.spiderman**
 Post a random Spider-Man quote from the Sam Raimi/Tobey Maguire trilogy. Pizza time!
 
-## **.joker**
-Post a random Joker quote from The Dark Knight (2007). Introduce a little anarchy!
+## **.help**
+When you people need help.
 
-## **.r2d2**
-Bleep Bloop.
+## **.heavy**
+Post a random quote from Heavy.
 
-## **.err**
-Err 1034 Could Not Respond needs.
-
-## **.bane**
-Post a random Bane quote.
-
-## **.scottpilgrim**
-Post a random Scott Pilgrim quote.
- 
 <hr>
 
 # **Collaborators**

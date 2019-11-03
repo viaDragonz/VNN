@@ -1,0 +1,45 @@
+const config = require("../config.json");
+const Sentry = require('@sentry/node');
+Sentry.init({
+    dsn: `${config.dsn}`
+});
+
+
+
+const {
+    get
+} = require("snekfetch");
+const talkedRecently = new Set();
+
+exports.run = (client, message, args) => {
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+    } else {
+        const bane = [
+            "Or perhaps he's wondering why someone would shoot a man... before throwing him out of a plane.",
+            "It would be extremely painful.",
+            "I am the League of Shadows...",
+            "Theatricality and Deception are powerful agents to the uninitiated. But we are initiated, aren't we, Bruce? Members of the League of Shadows.",
+            "It doesn't matter who we are. What matters is our plan.",
+            "Crashing this plane... ***With no survivors!***",
+            "Of course! Dr. Pavel refused our offer in favour of yours, we had to find out what he told you.",
+            "Yes. The fire rises!",
+            "We both know I have to kill you now.",
+            "*Impossible.*",
+            "I was wondering what would break first... your spirit? Or your body!",
+            "They expect one of us in the wreckage, Brother!",
+            "Calm, doctor! Now is not the time for fear... That comes later.",
+            "Search him. Then I will kill you.",
+            "Why else would you people be here?",
+            "Time to go mobile.",
+            "Do you feel in charge?",
+            "Peace has cost you strength. Victory has defeated you.",
+            "You think the darkness is your ally. But you merely adopted the dark. I was born in it, moulded by it. I didn't see the light until I was already a man. And by then it was nothing to me but ***BLINDING!***"
+        ];
+        message.channel.send(`${bane[Math.floor(Math.random() * bane.length)]}`)
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id);
+        }, 15000);
+    }
+}

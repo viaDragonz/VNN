@@ -9,7 +9,7 @@ const talkedRecently = new Set();
 
 exports.run = (client, message, [mention, ...reason]) => {
     if (talkedRecently.has(message.author.id)) {
-        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+        message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
     } else {
         const ageMember = message.mentions.members.first();
         if (message.mentions.members.size === 0) {
@@ -21,6 +21,6 @@ exports.run = (client, message, [mention, ...reason]) => {
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
-        }, 15000);
+        }, 10000);
     }
 }

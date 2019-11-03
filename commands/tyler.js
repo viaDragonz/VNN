@@ -16,7 +16,7 @@ const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
-        message.channel.send("Wait 15 seconds before trying this again. - " + message.author);
+        message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
     } else {
         const tyler = [
             "https://media.discordapp.net/attachments/627915749599477770/630499783068483585/images.png",
@@ -143,6 +143,6 @@ exports.run = (client, message, args) => {
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
-        }, 15000);
+        }, 10000);
     }
 }
