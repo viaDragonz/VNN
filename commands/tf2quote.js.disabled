@@ -60,6 +60,8 @@ exports.run = (client, message, args) => {
             "I just tore you a new chimney, Smokey Joe.",
             "Stars and Stripes beats Hammer and Sickle! Look it up.",
             "Gotcha, cruton.",
+            "I have done nothing but teleport bread for three days!",
+            "My god...",
             //Spy Quotes
             "Well, this was a disappointment!",
             "You got blood on my suit.",
@@ -82,12 +84,14 @@ exports.run = (client, message, args) => {
             "MMPH MMPH MMPH!",
             "MMPH MMPH MMPH MMPH!",
             //Engineer Quotes
+            "Hey look, buddy. I'm an engineer. And that means I solve problems.",
             //Medic Quotes
             "*Let's go practice Medicine.*",
             "Oktoberfest!",
             //Demo Quotes
             "Oh, they're going to have to put you back together... IN HELL!",
             "*Drunk Rambling*",
+            //Saxton/Pauling/Admin/Misc Quotes
         ];
         message.channel.send(`${tf2merc[Math.floor(Math.random() * tf2merc.length)]}`)
         talkedRecently.add(message.author.id);
