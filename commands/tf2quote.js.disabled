@@ -89,8 +89,24 @@ exports.run = (client, message, args) => {
             "*Let's go practice Medicine.*",
             "Oktoberfest!",
             //Demo Quotes
-            "Oh, they're going to have to put you back together... IN HELL!",
-            "*Drunk Rambling*",
+            "Oh, they're goin' ta have to glue you back together... IN HELL!",
+            "DOMINATED, twinkle-toes!",
+            "Dominated, ya wee scamperin' windbag!",
+            "Dominated, tiny man!",
+            "Don't come wide with me, ye pint-sized mutt!",
+            "Grow some hair on yer face, and come and try me again, lad.",
+            "Oh, you're a wee little miss, you are!",
+            "How's that feel, ya blockhead?",
+            "Ya great lactating wet nurse!",
+            "Don't fret, boyo. I'll be gentle!",
+            "And that's what yeh get for touching that!",
+            "You appear to have trodden on a mine!",
+            "Bloody hell, those ones were me favorites!",
+            "Let that be a bloody lesson to yeh!",
+            "Couldn't ya see the bloody bombs?",
+            "You're all bloody dead!",
+            "DOMINATED, twinkle-toes!",
+            "*Drunk Rambling*"
             //Saxton/Pauling/Admin/Misc Quotes
         ];
         message.channel.send(`${tf2merc[Math.floor(Math.random() * tf2merc.length)]}`)
