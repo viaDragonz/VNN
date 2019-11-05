@@ -14,10 +14,10 @@ function changeStyle() {
     var peopleContainer = document.getElementById('peoplecontainer');
     
     if (getBrowserWidth <= 1024) {
-        header.style.height = "75px";
-        vnnLogo.style.height = "75px";
+        header.style.height = "85px";
+        vnnLogo.style.height = "85px";
         title.style.fontSize = "20px";
-        navMenu.style.fontSize = "18px";
+        navMenu.style.fontSize = "19px";
         siteWrapper.style.width = "795px";
         siteWrapper.style.height = "350px";
         thePeopleSign.style.fontSize = "25px";
@@ -32,10 +32,10 @@ function changeStyle() {
         toddDescription.style.paddingTop = "108px";
     }
     if (getBrowserWidth >= 1920) {
-        header.style.height = "200px";
-        vnnLogo.style.height = "200px";
-        title.style.fontSize = "45px";
-        navMenu.style.fontSize = "48px";
+        header.style.height = "170px";
+        vnnLogo.style.height = "170px";
+        title.style.fontSize = "42px";
+        navMenu.style.fontSize = "45px";
         siteWrapper.style.width = "1800px";
         siteWrapper.style.height = "541px";
         thePeopleSign.style.fontSize = "60px";
@@ -50,10 +50,10 @@ function changeStyle() {
         toddDescription.style.paddingTop = "275px";
     }
     if (getBrowserWidth >= 3840) {
-        header.style.height = "380px";
-        vnnLogo.style.height = "380px";
-        title.style.fontSize = "85px";
-        navMenu.style.fontSize = "95px";
+        header.style.height = "350px";
+        vnnLogo.style.height = "350px";
+        title.style.fontSize = "90px";
+        navMenu.style.fontSize = "100px";
         siteWrapper.style.width = "3700px";
         siteWrapper.style.height = "1000px";
         thePeopleSign.style.fontSize = "125px";

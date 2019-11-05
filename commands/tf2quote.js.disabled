@@ -52,6 +52,12 @@ exports.run = (client, message, args) => {
             "*Boom!* I'm back, dummy!",
             "Let's waste 'em.",
             "Oh I'm burnin', I'm-I'm burnin'!",
+            "BONK!",
+            "I am owning you, you fat, bald, fatty fat... Fat fat!",
+            "I... eat... your...sandviches. I eat 'em up!",
+            "Nice hustle, 'tons-a-fun'! Next time, eat a salad!",
+            "Hey, lard-fat, those hard arteries don't stop bullets, do they?",
+            "I think I'll take Sasha out for a steak dinner tonight. Whataya think about that?",
             
             //Soldier Quotes
             "Screamin' Eagles!",
@@ -62,6 +68,13 @@ exports.run = (client, message, args) => {
             "Gotcha, cruton.",
             "I have done nothing but teleport bread for three days!",
             "My god...",
+            "Dear god...",
+            "AAAAAHHHHHHHHHHHHHHHHHHHH!",
+            "And from that day forward any time a bunch of animals are together in one place it's called a zoo!",
+            "Then he used his fight money to buy two of every animal on earth, and then he herded them onto a boat, and then he beat the crap out of every single one!",
+            "If fighting is sure to result in victory, then you must fight! Sun Tzu said that. And I'd say he knows a little more about fighting than you do, pal, because he invented it! And then he perfected it so that no living man could best him in the ring of honor!",
+            "Unless it's a farm!",
+            "Unless it's a farm!",
             
             //Spy Quotes
             "Well, this was a disappointment!",
@@ -180,9 +193,14 @@ exports.run = (client, message, args) => {
             "Don't worry son, you'll be just fine...",
             "It can smell fear...",
             "There you are!",
+            "WELCOME, TO MERCENARY PARK!",
             
             //Mrs. Pauling
             "Scout, I get one day off, a year, and you wasted on... THIS! Goodbye.",
+            "What the hell is that?!?",
+            "Looks like I will be burying bodies all weekend. So that you don't go to jail.",
+            "Oh, you already gonna be at that one.",
+            "Tell me you got the briefcase.",
             
             //Administrator
             "YOU FAILED!",

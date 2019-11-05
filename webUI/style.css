@@ -1,10 +1,14 @@
 /* This is the CSS used in all pages */
 /* The pages are splitted in sections */
 
+/*  site's color pallette  */
+/*  #FFA200  */
+/*  #121530  */
+/*  #1C2135  */
+/*  darkslateblue  */
+
 /* =====default style for ALL pages START===== */
 body {
-/*    background-color: #121530;*/
-/*    background-color: #1C2135;*/
     background-color: darkslateblue;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +19,7 @@ body {
 }
 
 #header {
-/*    width: 100%;*/
+    width: 100%;
     height: 100px;
 }
 
@@ -25,15 +29,11 @@ body {
     background-size: contain;
     background-position: center;
     background-color: #121530;
-/*    position: relative;*/
     height: 100%;
 }
 
 #title {
-/*    background-color: #1C2135;*/
     background-color: #FFA200;
-/*    width: 100%;*/
-/*    position: relative;*/
     overflow: hidden;
     font-size: 27px;
     color: white;
@@ -97,13 +97,19 @@ a {
 /* =====styles for the Home page START===== */
 #main {
     background-color: darkslateblue;
-    background-image: url(images/Spy.png);
-    background-size: contain;
+    background-size: 20%;
     background-repeat: no-repeat;
-    background-position: 250px;
-    width: 100%;
-    height: 100%;
-    margin: 15px;
+    background-position: 0px 0px;
+    margin: 15px auto;
+    width: 90%;
+    height: 95%;
+}
+
+#textSPY {
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-family: Quantico, Arial, sans-serif;
 }
 /* =====styles for the Home page END===== */
 
@@ -257,7 +263,7 @@ a {
     background-color: black;
     max-width: 750px;
     color: white;
-    font-size: 39px;
+    font-size: 45px;
     font-family: Default Font, Quantico, Arial, sans-serif;
     text-align: center;
     overflow: hidden;
@@ -282,7 +288,7 @@ a {
 }
 
 #userhere {
-    margin: 20px auto 0px auto;
+    margin: 10px auto 0px auto;
     width: 100%;
     height: 200px;
     font-family: Quantico, Arial, sans-serif;
@@ -324,7 +330,6 @@ a {
 }
 
 .peoplethumbs {
-/*    background-color: #111;*/
     text-align: center;
     width: 100%;
     margin: 10px;
@@ -334,9 +339,7 @@ a {
 
 .peoplethumbs:hover {
     transform: scale(1.02) rotate(1.02deg);
-/*    filter: blur(2px);*/
     transition: 0.2s;
-/*    cursor: pointer;*/
 }
 
 .peoplephoto {
