@@ -4,8 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
-
 const {
     get
 } = require("snekfetch");
@@ -15,7 +13,7 @@ exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
         message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
     } else {
-        const tf2merc = [
+        const tf2 = [
             //Heavy Quotes.
             "Cry some more!",
             "Vzzzzzt! Rahrahrahrah! Vrrrrr! Wahahahaaaaaa!",
@@ -46,6 +44,7 @@ exports.run = (client, message, args) => {
             "You are no match for me!",
             "I promise you pain without end.",
             "WAAAAH!",
+            
             //Scout Quotes
             "You got *owned*!",
             "Say goodbye to your kneecaps, chucklehead!",
@@ -53,6 +52,7 @@ exports.run = (client, message, args) => {
             "*Boom!* I'm back, dummy!",
             "Let's waste 'em.",
             "Oh I'm burnin', I'm-I'm burnin'!",
+            
             //Soldier Quotes
             "Screamin' Eagles!",
             "MAGGOTS!",
@@ -62,6 +62,7 @@ exports.run = (client, message, args) => {
             "Gotcha, cruton.",
             "I have done nothing but teleport bread for three days!",
             "My god...",
+            
             //Spy Quotes
             "Well, this was a disappointment!",
             "You got blood on my suit.",
@@ -69,6 +70,7 @@ exports.run = (client, message, args) => {
             "Well, off to visit your mother!",
             "Here lies Scout. He ran fast and died a virgin.",
             "Gentlemen.",
+            
             //Sniper Quotes
             "Wuss.",
             "Stupid bloody Spies.",
@@ -77,17 +79,65 @@ exports.run = (client, message, args) => {
             "You've been killed by the best, cyclops!",
             "Put Mum on the phone...",
             "You're making this so easy, I'm actually getting worse!",
+            
             //Pyro Quotes
             "MMPH!",
             "MMPH MMPH!",
             "MMPHMMPH!",
             "MMPH MMPH MMPH!",
             "MMPH MMPH MMPH MMPH!",
+            
             //Engineer Quotes
             "Hey look, buddy. I'm an engineer. And that means I solve problems.",
+            "That's what ya get!",
+			"How'd that plan turn out for ya, dummy?",
+			"Whoooowee! Makin' bacon!",
+			"Whoooowee, would ya look at that!",
+			"Nice goin', pardner!",
+			"Thanks, mister!",
+			"I told ya don't touch that darn thing.",
+			"I built that.",
+			"That's what it was made for.",
+			"Another satisfied customer!",
+            "This thing ain't on auto-pilot, son!",
+            "Tagged ya.",
+            "That there is a gold-plated kill!",
+            "Guess I got the Midas touch.",
+			"Sometimes, you just need a little less gun.",
+			"Ain't that a cute little gun?",
+			"I love that little gun!",
+			"Dispenser going up.",
+			"Erecting a Dispenser.",
+			"Sentry going up.",
+			"Buildin' a Sentry.",
+			"Teleporter comin' right up.",
+			"Teleporter goin' up.",
+			"Packin' up!",
+			"Movin' out!",
+			"I'm movin' this!",
+            "Heavy load comin' through!",
+            "Outta mah way! Outta mah way!",
+			"Spy's sappin' my Dispenser!",
+			"Spy's sappin' my Sentry!",
+			"Spy's sappin' my Teleporter!",
+			"Dispenser down!",
+			"Sentry down!",
+			"Teleporter down!",
+            
             //Medic Quotes
             "*Let's go practice Medicine.*",
             "Oktoberfest!",
+            "Eins, zwei, drei... Ugh, I do not think ve brought enough body bags.",
+            "Haha! Vat a bloodbath!",
+            "Danke, Kamerad!",
+            "Ve did it, Kamerad!",
+            "Would you like a second opinion? You are also ugly!",
+            "Come over here. I promise I will heal you!",
+            "Stupendous!",
+            "Schweinhunds.",
+            "Schweinhunds!",
+            "Dummkopfs!",
+            
             //Demo Quotes
             "Oh, they're goin' ta have to glue you back together... IN HELL!",
             "DOMINATED, twinkle-toes!",
@@ -105,11 +155,43 @@ exports.run = (client, message, args) => {
             "Let that be a bloody lesson to yeh!",
             "Couldn't ya see the bloody bombs?",
             "You're all bloody dead!",
-            "DOMINATED, twinkle-toes!",
-            "*Drunk Rambling*"
-            //Saxton/Pauling/Admin/Misc Quotes
+            "I didn't need yer help, you know.",
+            "We did it, mate!",
+            "That'll teach 'em!",
+            "Ka-boooom!",
+            "Kablooie!",
+            "Aye, me bottle o' scrumpy!",
+            "See! I told ya they were a bunch o' wee lasses!",
+            "I'll notify yer next o' kin... that ya sucked!",
+            "Hey, Private Haircut, I might've taken a bit too much off... yer head!",
+            "Mother o' mercy! Now that is a bloody domination!",
+            "Lot o' good that Soldier trainin' did ya! I'm drunk!",
+            "Burn! In! HELL!'",
+            "Freeeedooooom!",
+            "Hae at 'em, lads!",
+            "Get 'am, Boyos!",
+            "Kill 'em all!",
+            "Leeeeet's do iiiiit!",
+            "Aigheaght's the way to do it!",
+            "Come on!",
+            "*Drunk Rambling*",
+            
+            //Saxton Hale quotes
+            "Don't worry son, you'll be just fine...",
+            "It can smell fear...",
+            "There you are!",
+            
+            //Mrs. Pauling
+            "Scout, I get one day off, a year, and you wasted on... THIS! Goodbye.",
+            
+            //Administrator
+            "YOU FAILED!",
+            "Victory.",
+            "5, 4, 3, 2, 1!"
+            
+            //Misc Quotes
         ];
-        message.channel.send(`${tf2merc[Math.floor(Math.random() * tf2merc.length)]}`)
+        message.channel.send(`${tf2[Math.floor(Math.random() * tf2.length)]}`)
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
