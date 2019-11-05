@@ -6,8 +6,10 @@ botStatus.onreadystatechange = function () {
     if (botStatus.responseText === '[{ "status":"online","color":"green" }]') {
         document.getElementById('botstatus').innerHTML = "ONLINE";
         document.getElementById('botstatus').style.color = "green";
+        document.getElementById('engineer').style.filter = "contrast(100%)";
     }
-    if (botStatus.responseText === '[{ "status":"offline","color":"red" }]') {
+    //if (botStatus.responseText === '[{ "status":"offline","color":"red" }]') {
+    else {
         document.getElementById('botstatus').innerHTML = "OFFLINE";
         document.getElementById('botstatus').style.color = "red";
         document.getElementById('engineer').style.filter = "contrast(10%)";
