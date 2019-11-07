@@ -135,7 +135,15 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/579481334657974273/638293760299630593/0.png",
             "https://cdn.discordapp.com/attachments/579481334657974273/638556018783289354/unknown.png",
             "https://cdn.discordapp.com/attachments/258324481074921472/639634379231985666/unknown.png",
-            "https://cdn.discordapp.com/attachments/258324481074921472/639634269505060871/unknown.png"
+            "https://cdn.discordapp.com/attachments/258324481074921472/639634269505060871/unknown.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/641808367534342169/unknown.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/641807886770634752/unknown.png",
+            "https://media.discordapp.net/attachments/258412663573446657/554826470250250250/tyler-mcnetwork.gif",
+            "https://cdn.discordapp.com/attachments/258449773143523328/641745449048473600/EIt-40IXkAEz-PT.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/641723571667992618/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/641697336749457428/JPEG_20191106_125554.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/641465211492237322/DO-U-KNOW-DE-WAE.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/641370888440381450/JPEG_20191105_151847.jpg"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
