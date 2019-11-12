@@ -1,0 +1,17 @@
+exports.run = (client, message, args) => {
+
+    const modRole = message.guild.roles.find(role => role.name === "Mods");
+    if (!modRole) return console.log("The Mods role does not exist");
+    if (!message.member.roles.has(modRole.id)) return message.reply("You can't use this command.");
+
+    if (!message.guild) return;
+     if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+        .then(connection => {
+          message.reply('I have successfully connected to the channel!');
+        })
+        .catch(console.log);
+    } else {
+      message.reply('You need to join a voice channel first!');
+    }
+}
