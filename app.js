@@ -1,40 +1,40 @@
 const express = require('express');
 json = require('express-json');
 const app = express()
-const config = require("./config.json");
+    const config = require("./config.json");
 const Sentry = require('@sentry/node');
 Sentry.init({
     dsn: `${config.dsn}`
 });
 const {
     Client,
-    RichEmbed,
+        RichEmbed,
     WebhookClient
-} = require('discord.js');
-const Enmap = require("enmap");
-const fs = require("fs");
+    } = require('discord.js');
+            const Enmap = require("enmap");
+    const fs = require("fs");
 const client = new Client();
 // We also need to make sure we're attaching the config to the CLIENT so it's accessible everywhere!
 client.config = config;
 client.RichEmbed = RichEmbed;
 fs.readdir("./events/", (err, files) => {
     if (err) return Sentry.captureException(err);
-    files.forEach(file => {
+                files.forEach(file => {
         const event = require(`./events/${file}`);
-        let eventName = file.split(".")[0];
+                 let eventName = file.split(".")[0];
         client.on(eventName, event.bind(null, client));
-    });
-});
+     });
+            });
 
 client.commands = new Enmap();
-fs.readdir("./commands/", (err, files) => {
+    fs.readdir("./commands/", (err, files) => {
     if (err) return Sentry.captureException(err);
-    files.forEach(file => {
+       files.forEach(file => {
         if (!file.endsWith(".js")) return;
-        let props = require(`./commands/${file}`);
-        let commandName = file.split(".")[0];
+                  let props = require(`./commands/${file}`);
+              let commandName = file.split(".")[0];
         console.log(`Attempting to load command ${commandName}`);
-        client.commands.set(commandName, props);
+                   client.commands.set(commandName, props);
     })
 });
 
