@@ -23,7 +23,7 @@ When used, this will get the date your account was created.
 
 If you mention a user, it will get the age of said user. `.age @CoolGuy#0000` 
 
-## .ban**
+## .ban
     .ban @CoolGuy#0000 This is a reason!
 
 Ban the user. This will post a ban message in the Mod Logs Channel.
