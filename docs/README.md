@@ -111,4 +111,7 @@ Jota, the guy who asked ACFC to upload this bot on GitHub so he can help.
 
 "Penis"
 ## 2Eggs#1337
+The donkey who hacked Valve and CS:GO and got cash and wasted it on virtual skins.
+
+"Good Guy 2Horse donkey money ape bananas"
 ## spooky todd#2864
