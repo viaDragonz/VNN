@@ -91,7 +91,7 @@ Post a random quote from Heavy.
 ## ACFC#0805
 ACFC, Owner of the bot and repo.
 
-"If its broken, dont fix it.
+"If its broken, dont fix it."
 
 ## Jota#7661
 ## 2Eggs#1337
