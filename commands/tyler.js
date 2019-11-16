@@ -163,7 +163,16 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258324481074921472/643232735879757824/mail.png",
             "https://media.discordapp.net/attachments/258324481074921472/643235571426394112/unknown.png",
             "https://media.discordapp.net/attachments/258324481074921472/644280056948195338/tyler_soup.png",
-            "https://cdn.discordapp.com/attachments/258324481074921472/644283417407782923/unknown.png"
+            "https://cdn.discordapp.com/attachments/258324481074921472/644283417407782923/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/259362397406494720/2007_0804junejuly070008.JPG",
+            "https://cdn.discordapp.com/attachments/258449773143523328/260967164108865557/JPEG_Image_8663484.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/260967249152704512/JPEG_Image_13935425.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/278632661860352010/d46b1e7b-2377-4308-87ab-ed075c71347c.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/286286526000660480/unknown.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/286285376904101899/unknown.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/286284612588666880/Picture_1.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/294303874502754307/521554_548408451854452_159099972_n.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/330062174451924992/received_1759411487420803.jpeg"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
