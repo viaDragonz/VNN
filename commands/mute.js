@@ -17,13 +17,17 @@ const connection = mysql.createConnection({
 })
 exports.run = (client, message, [mention, ...reason]) => {
     const modRole = message.guild.roles.find(role => role.name === "Mods");
+    const mutedRole = message.guild.roles.find(role => role.name === "Muted");
+    const newsNetworksRole = message.guild.roles.find(role => role.name === "News Networks");
     if (!modRole) return console.log("The Mods role does not exist");
-    if (!message.member.roles.has(modRole.id)) return message.reply("You can't use this command.");
-    if (message.mentions.members.size === 0) return message.reply("Please mention a user to mute");
+    if (!message.member.roles.has(modRole.id)) return message.reply("you're not a mod! You can't use this command!");
+    if (message.mentions.members.size === 0) return message.reply("please, mention a user to mute");
     //  if (!message.guild.me.hasPermission("BAN_MEMBERS"))
     //    return message.reply("Im lacking the MANAGE_ROLES perms!");
+    //      if (poop) return poo
     const muteMember = message.mentions.members.first();
-    muteMember.addRole(`258418051656056832`).then(member => {
+    muteMember.removeRole(newsNetworksRole);
+    muteMember.addRole(mutedRole).then(member => {
         const tolog = {
             userid: `${member.user.id}`,
             modid: `${message.author.id}`,
