@@ -18,9 +18,9 @@ const connection = mysql.createConnection({
 exports.run = (client, message, [mention, ...reason]) => {
     const modRole = message.guild.roles.find(role => role.name === "Mods");
     if (!modRole) return console.log("The Mods role does not exist");
-    if (!message.member.roles.has(modRole.id)) return message.reply("You can't use this command.");
-    if (message.mentions.members.size === 0) return message.reply("Please mention a user to ban");
-    if (!message.guild.me.hasPermission("BAN_MEMBERS")) return message.reply("Im lacking the BAN_MEMBERS perms!");
+    if (!message.member.roles.has(modRole.id)) return message.reply("you can't use this command.");
+    if (message.mentions.members.size === 0) return message.reply("please, mention a user to ban.");
+    if (!message.guild.me.hasPermission("BAN_MEMBERS")) return message.reply("I'm lacking the BAN_MEMBERS perms!");
     const banMember = message.mentions.members.first();
     banMember.ban(reason.join(" ")).then(member => {
         const tolog = {
@@ -31,7 +31,7 @@ exports.run = (client, message, [mention, ...reason]) => {
             date: `${new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')}`
         }
         connection.query('INSERT INTO bans SET ?', tolog)
-        client.channels.get("627705786667106304").send(`\*\*A USER HAS BEEN BANNED FROM THE DISCORD\*\* \n ${member.user.username} was banned by ${message.author.username} \n \*\*Reason\:\*\*\n ${reason.join(" ")}`)
-        message.reply(`${member.user.username} was succesfully banned.`);
+        client.channels.get("627705786667106304").send(`\*\*A USER HAS BEEN BANNED FROM THIS SERVER\*\* \n ${member.user.username} was banned by ${message.author.username} \n \*\*Reason\:\*\*\n ${reason.join(" ")}`)
+        message.reply(`${member.user.username} was successfully banned.`);
     });
 };

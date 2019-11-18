@@ -107,7 +107,7 @@ ACFC, Owner of the bot and repo.
 "If its broken, dont fix it."
 
 ## Jota#7661
-Jota, the guy who asked ACFC to upload this bot on GitHub so he can help.
+Jota, the guy who asked ACFC to upload this bot on GitHub so he could help.
 
 "Penis"
 ## 2Eggs#1337

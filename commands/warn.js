@@ -4,7 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
 const uuidv4 = require('uuid/v4');
 const mysql = require('mysql');
 const connection = mysql.createConnection({
@@ -18,8 +17,8 @@ const connection = mysql.createConnection({
 exports.run = (client, message, [mention, ...reason]) => {
     const modRole = message.guild.roles.find(role => role.name === "Mods");
     if (!modRole) return console.log("The Mods role does not exist");
-    if (!message.member.roles.has(modRole.id)) return message.reply("You can't use this command.");
-    if (message.mentions.members.size === 0) return message.reply("Please mention a user to warn");
+    if (!message.member.roles.has(modRole.id)) return message.reply("you can't use this command.");
+    if (message.mentions.members.size === 0) return message.reply("please, mention a user to warn.");
     const member = message.mentions.members.first();
     const tolog = {
         userid: `${member.user.id}`,

@@ -18,9 +18,9 @@ const connection = mysql.createConnection({
 exports.run = (client, message, [mention, ...reason]) => {
     const modRole = message.guild.roles.find(role => role.name === "Mods");
     if (!modRole) return console.log("The Mods role does not exist");
-    if (!message.member.roles.has(modRole.id)) return message.reply("You can't use this command.");
-    if (message.mentions.members.size === 0) return message.reply("Please mention a user to kick");
-    if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Im lacking the KICK_MEMBERS perms!");
+    if (!message.member.roles.has(modRole.id)) return message.reply("you can't use this command.");
+    if (message.mentions.members.size === 0) return message.reply("please, mention a user to kick.");
+    if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("I'm lacking the KICK_MEMBERS perms!");
     const kickMember = message.mentions.members.first();
     kickMember.kick(reason.join(" ")).then(member => {
         const tolog = {
@@ -31,7 +31,7 @@ exports.run = (client, message, [mention, ...reason]) => {
             date: `${new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')}`
         }
         connection.query('INSERT INTO kicks SET ?', tolog)
-        client.channels.get("627705786667106304").send(`\*\*A USER HAS KICKED BANNED FROM THE DISCORD\*\* \n ${member.user.username} was kicked by ${message.author.username} \n \*\*Reason\:\*\*\n ${reason.join(" ")}`)
-        message.reply(`${member.user.username} was succesfully kicked.`);
+        client.channels.get("627705786667106304").send(`\*\*A USER HAS KICKED BANNED FROM THIS SERVER\*\* \n ${member.user.username} was kicked by ${message.author.username} \n \*\*Reason\:\*\*\n ${reason.join(" ")}`)
+        message.reply(`${member.user.username} was successfully kicked.`);
     });
 };
