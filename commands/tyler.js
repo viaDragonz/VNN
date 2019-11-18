@@ -4,8 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
-
 const fs = require('fs');
 const http = require('http');
 var request = require('request');
@@ -172,7 +170,18 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258449773143523328/286285376904101899/unknown.png",
             "https://cdn.discordapp.com/attachments/258449773143523328/286284612588666880/Picture_1.jpg",
             "https://cdn.discordapp.com/attachments/258324481074921472/294303874502754307/521554_548408451854452_159099972_n.jpg",
-            "https://cdn.discordapp.com/attachments/258449773143523328/330062174451924992/received_1759411487420803.jpeg"
+            "https://cdn.discordapp.com/attachments/258449773143523328/330062174451924992/received_1759411487420803.jpeg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/644377985964834816/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/644580719204761610/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/644594771427459097/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/644919878524076062/JPEG_20191115_102107.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/644920372889649182/JPEG_20191114_232359.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/645067510030270465/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/645067860854439947/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/645331672870551552/JPEG_20191116_133726.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/645359297231978579/IMG_20191116_152542_01.jpg",
+            "https://memeshappen.com/media/created/2019/04/GESTICAL-AND-POO-POO-FARTED-PORTAL-2-HALF-LIFE-HLVR-VALVE-INDEX-BONERWORKS.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/645779565507248128/tyler.PNG"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
