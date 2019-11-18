@@ -181,7 +181,9 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258324481074921472/645331672870551552/JPEG_20191116_133726.jpg",
             "https://cdn.discordapp.com/attachments/258324481074921472/645359297231978579/IMG_20191116_152542_01.jpg",
             "https://memeshappen.com/media/created/2019/04/GESTICAL-AND-POO-POO-FARTED-PORTAL-2-HALF-LIFE-HLVR-VALVE-INDEX-BONERWORKS.jpg",
-            "https://cdn.discordapp.com/attachments/258324481074921472/645779565507248128/tyler.PNG"
+            "https://cdn.discordapp.com/attachments/258324481074921472/645779565507248128/tyler.PNG",
+            "https://cdn.discordapp.com/attachments/258324481074921472/506275856419782666/JPEG_Image_21607512.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/506004798773133312/tyler_look.png"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
