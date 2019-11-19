@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
         message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
     } else {
-        const tf2 = [
+        const tf2quote = [
             //Heavy Quotes.
             "Cry some more!",
             "Vzzzzzt! Rahrahrahrah! Vrrrrr! Wahahahaaaaaa!",
@@ -74,7 +74,6 @@ exports.run = (client, message, args) => {
             "Then he used his fight money to buy two of every animal on earth, and then he herded them onto a boat, and then he beat the crap out of every single one!",
             "If fighting is sure to result in victory, then you must fight! Sun Tzu said that. And I'd say he knows a little more about fighting than you do, pal, because he invented it! And then he perfected it so that no living man could best him in the ring of honor!",
             "Unless it's a farm!",
-            "Unless it's a farm!",
             
             //Spy Quotes
             "Well, this was a disappointment!",
@@ -83,7 +82,7 @@ exports.run = (client, message, args) => {
             "Well, off to visit your mother!",
             "Here lies Scout. He ran fast and died a virgin.",
             "Gentlemen.",
-	    "He could be any one of us! He could be you! He could be me! He could even be-- **BAM**",
+            "He could be any one of us! He could be you! He could be me! He could even be-- **BAM**",
             
             //Sniper Quotes
             "Wuss.",
@@ -93,7 +92,7 @@ exports.run = (client, message, args) => {
             "You've been killed by the best, cyclops!",
             "Put Mum on the phone...",
             "You're making this so easy, I'm actually getting worse!",
-	    "I think his mate saw me... Yes, yes he did!!",
+            "I think his mate saw me... Yes, yes he did!!",
             
             //Pyro Quotes
             "MMPH!",
@@ -209,11 +208,11 @@ exports.run = (client, message, args) => {
             "YOU FAILED!",
             "Victory.",
             "5, 4, 3, 2, 1!",
-	    "YOU FAILED, STALEMATE!"
+            "YOU FAILED, STALEMATE!"
             
             //Misc Quotes
         ];
-        message.channel.send(`${tf2[Math.floor(Math.random() * tf2.length)]}`)
+        message.channel.send(`${tf2quote[Math.floor(Math.random() * tf2quote.length)]}`)
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
