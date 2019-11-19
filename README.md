@@ -85,7 +85,7 @@ Post a random drawing of Tyler McVicker.
 Post a random cat fact!
 
 ## **.ishlvrout**
-Is HLVR out? 
+Is Half-Life: Alyx out? 
 
 ![Perhaps](https://i.imgur.com/oFNRw4u.png)
 
