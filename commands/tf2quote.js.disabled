@@ -83,6 +83,7 @@ exports.run = (client, message, args) => {
             "Well, off to visit your mother!",
             "Here lies Scout. He ran fast and died a virgin.",
             "Gentlemen.",
+	    "He could be any one of us! He could be you! He could be me! He could even be-- **BAM**",
             
             //Sniper Quotes
             "Wuss.",
@@ -92,6 +93,7 @@ exports.run = (client, message, args) => {
             "You've been killed by the best, cyclops!",
             "Put Mum on the phone...",
             "You're making this so easy, I'm actually getting worse!",
+	    "I think his mate saw me... Yes, yes he did!!",
             
             //Pyro Quotes
             "MMPH!",
@@ -136,6 +138,7 @@ exports.run = (client, message, args) => {
 			"Dispenser down!",
 			"Sentry down!",
 			"Teleporter down!",
+			"Nice going, partner...",
             
             //Medic Quotes
             "*Let's go practice Medicine.*",
@@ -205,7 +208,8 @@ exports.run = (client, message, args) => {
             //Administrator
             "YOU FAILED!",
             "Victory.",
-            "5, 4, 3, 2, 1!"
+            "5, 4, 3, 2, 1!",
+	    "YOU FAILED, STALEMATE!"
             
             //Misc Quotes
         ];
