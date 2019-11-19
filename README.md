@@ -101,19 +101,24 @@ Post a random quote from Heavy.
 <hr>
 
 # **Collaborators**
-- **ACFC#0805**
 
-- **Jota#7661**
+## ACFC#0805
+ACFC, Owner of the bot and repo.
 
-- **2Eggs#1337**
+"If its broken, dont fix it."
 
-- **spooky todd#2864**
+## Jota#7661
+Jota, the guy who asked ACFC to upload this bot on GitHub so he could help.
 
-<hr>
+"Penis"
+## 2Eggs#1337
+The donkey who hacked Valve and CS:GO and got cash and wasted it on virtual skins.
 
-# **Contributors**
+"Good Guy 2Horse donkey money ape bananas"
+## christmas todd#2864
+Todd, the guy who shits out commands every once in a while. Working on a few things.
 
-
+"wait, i broke the bot?"
 
 <hr>
 
