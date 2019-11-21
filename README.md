@@ -14,7 +14,7 @@ Want to suggest a new command, report an improvement to an already existing comm
 
 <hr>
 
-# Bot commands
+# Bot Commands
 
 ## **.tyler**
 Post a random image of Tyler McVicker. (Want to submit a new image? Check out the [I want to submit an image to ".tyler"](https://github.com/aidenjay345/VNN/wiki/I-want-to-submit-an-image-to-%22.tyler%22) wiki page.)
