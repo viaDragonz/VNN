@@ -58,6 +58,7 @@ exports.run = (client, message, args) => {
             "Nice hustle, 'tons-a-fun'! Next time, eat a salad!",
             "Hey, lard-fat, those hard arteries don't stop bullets, do they?",
             "I think I'll take Sasha out for a steak dinner tonight. Whataya think about that?",
+            "Next time, eat a salad.",
             
             //Soldier Quotes
             "Screamin' Eagles!",
@@ -73,7 +74,8 @@ exports.run = (client, message, args) => {
             "And from that day forward any time a bunch of animals are together in one place it's called a zoo!",
             "Then he used his fight money to buy two of every animal on earth, and then he herded them onto a boat, and then he beat the crap out of every single one!",
             "If fighting is sure to result in victory, then you must fight! Sun Tzu said that. And I'd say he knows a little more about fighting than you do, pal, because he invented it! And then he perfected it so that no living man could best him in the ring of honor!",
-            "Unless it's a farm!",
+            "**UNLESS IT'S A FARM!**",
+            "What? It was obvious! He's the RED Spy! He'll turn red any second now... any second now... see, red! Oh wait, that's blood.",
             
             //Spy Quotes
             "Well, this was a disappointment!",
@@ -82,6 +84,7 @@ exports.run = (client, message, args) => {
             "Well, off to visit your mother!",
             "Here lies Scout. He ran fast and died a virgin.",
             "Gentlemen.",
+            "The Spy has already breached our defenses...",
             "He could be any one of us! He could be you! He could be me! He could even be-- **BAM**",
             
             //Sniper Quotes
@@ -199,7 +202,7 @@ exports.run = (client, message, args) => {
             
             //Mrs. Pauling
             "Scout, I get one day off, a year, and you wasted on... THIS! Goodbye.",
-            "What the hell is that?!?",
+            "What the hell is that?!",
             "Looks like I will be burying bodies all weekend. So that you don't go to jail.",
             "Oh, you already gonna be at that one.",
             "Tell me you got the briefcase.",
