@@ -95,8 +95,8 @@ Post a random Spider-Man quote from the Sam Raimi/Tobey Maguire trilogy. Pizza t
 ## **.help**
 When you people need help.
 
-## **.heavy**
-Post a random quote from Heavy.
+## **.tf2quote**
+Post a random quote from a TF2 character.
 
 <hr>
 
