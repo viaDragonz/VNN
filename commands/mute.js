@@ -4,7 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
 const uuidv4 = require('uuid/v4');
 const mysql = require('mysql');
 const connection = mysql.createConnection({
@@ -15,10 +14,11 @@ const connection = mysql.createConnection({
     database: 'modbot',
     charset: 'utf8mb4'
 })
+
 exports.run = (client, message, [mention, ...reason]) => {
-    const modRole = message.guild.roles.find(role => role.name === "Mods");
-    const mutedRole = message.guild.roles.find(role => role.name === "Muted");
-    const newsNetworksRole = message.guild.roles.find(role => role.name === "News Networks");
+    const modRole = message.guild.roles.get("258327243657314306");
+    const mutedRole = message.guild.roles.get("258418051656056832");
+    const newsNetworksRole = message.guild.roles.get("258407726349025280");
     if (!modRole) return console.log("The Mods role does not exist");
     if (!message.member.roles.has(modRole.id)) return message.reply("you're not a mod! You can't use this command!");
     if (message.mentions.members.size === 0) return message.reply("please, mention a user to mute");
