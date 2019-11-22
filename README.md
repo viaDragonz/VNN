@@ -93,10 +93,16 @@ Is Half-Life: Alyx out?
 Post a random Spider-Man quote from the Sam Raimi/Tobey Maguire trilogy. Pizza time!
 
 ## **.help**
-When you people need help.
+When people need help.
 
 ## **.tf2quote**
 Post a random quote from a TF2 character.
+
+## **.userinfo**
+Post your info.
+
+## **.serverinfo**
+Post the server info.
 
 <hr>
 
