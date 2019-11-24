@@ -202,7 +202,7 @@ exports.run = (client, message, args) => {
             
             //Mrs. Pauling
             "Scout, I get one day off, a year, and you wasted on... THIS! Goodbye.",
-            "What the hell is that?!",
+            "What the hell is that?!?",
             "Looks like I will be burying bodies all weekend. So that you don't go to jail.",
             "Oh, you already gonna be at that one.",
             "Tell me you got the briefcase.",
