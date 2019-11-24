@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
         message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
     } else {
-        const embed = new Discord.RichEmbed()
+        const embed = new client.RichEmbed()
         .setColor("#1C2045")
         .setTitle("Server information")
         .setThumbnail(msg.guild.iconURL)
