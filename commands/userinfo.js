@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
         .addField("Created at", message.author.createdAt)
         .addField("Joined at", message.member.joinedAt)
         .addField("Bot?", message.author.bot)
-        .setFooter("Don't let these informations distract you from the fact that Tyler missed out on that thing.")
+        .setFooter(`Don't let this information distract you from the fact that Tyler missed out on "that thing".`)
         message.channel.sendEmbed(embed);
     }
     
