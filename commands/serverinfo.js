@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
         const embed = new client.RichEmbed()
         .setColor("#1C2045")
         .setTitle("Server information")
-        .setThumbnail(msg.guild.iconURL)
+        .setThumbnail(message.guild.iconURL)
         .addField("Server name", message.guild.name)
         .addField("Created at", message.guild.createdAt)
         .addField("You joined at", message.member.joinedAt)
