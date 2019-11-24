@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
         .addField("Created at", message.guild.createdAt)
         .addField("You joined at", message.member.joinedAt)
         .addField("Total users", message.guild.memberCount)
-        .setFooter("Don't let these informations distract you from the fact that Tyler missed out on that thing.")
+        .setFooter(`Don't let this information distract you from the fact that Tyler missed out on "that thing".`)
         message.channel.sendEmbed(embed);
     }
     
