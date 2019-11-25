@@ -20,8 +20,8 @@ exports.run = (client, message, args) => {
         .setThumbnail(message.author.avatarURL)
         .addField("Username", `${message.author.username}#${message.author.discriminator}`)
         .addField("ID", message.author.id)
-        .addField("Created At", message.author.createdAt)
-        .addField("Joined At", message.member.joinedAt)
+        .addField("Created On", message.author.createdAt)
+        .addField("Joined On", message.member.joinedAt)
         .addField("Is this user a bot?", message.author.bot)
         .setFooter(`Don't let this information distract you from the fact that Tyler missed out on that thing`, "https://i.imgur.com/LYnOpJE.png")
         message.channel.sendEmbed(embed);
