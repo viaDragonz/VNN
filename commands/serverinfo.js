@@ -15,13 +15,13 @@ exports.run = (client, message, args) => {
     } else {
         const embed = new client.RichEmbed()
         .setColor("#1C2045")
-        .setTitle("Server information")
+        .setTitle("Server Information")
         .setThumbnail(message.guild.iconURL)
-        .addField("Server name", message.guild.name)
-        .addField("Created at", message.guild.createdAt)
-        .addField("You joined at", message.member.joinedAt)
-        .addField("Total users", message.guild.memberCount)
-        .setFooter(`Don't let this information distract you from the fact that Tyler missed out on "that thing".`)
+        .addField("Server Name", message.guild.name)
+        .addField("Created On", message.guild.createdAt)
+        .addField("You Joined On", message.member.joinedAt)
+        .addField("Total Users", message.guild.memberCount)
+        .setFooter(`Don't let this information distract you from the fact that Tyler missed out on a free... um... *thing*.`)
         message.channel.sendEmbed(embed);
     }
     
