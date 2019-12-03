@@ -3,8 +3,8 @@ const Sentry = require('@sentry/node');
 Sentry.init({
     dsn: `${config.dsn}`
 });
-const talkedRecently = new Set();
 
+const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {

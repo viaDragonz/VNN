@@ -4,7 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
 const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {

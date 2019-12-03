@@ -4,8 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
-
 const {
     get
 } = require("snekfetch");

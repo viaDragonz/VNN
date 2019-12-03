@@ -5,7 +5,6 @@ Sentry.init({
 });
 const talkedRecently = new Set();
 
-
 exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
         message.channel.send("Wait 10 seconds before trying this again. - " + message.author);

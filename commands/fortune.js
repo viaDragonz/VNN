@@ -4,7 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
 var fortunes = require('fortunes');
 var options = {
     isShort: true,

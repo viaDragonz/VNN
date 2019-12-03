@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
         .setTitle("Server Information")
         .setThumbnail(message.guild.iconURL)
         .addField("Server Name", message.guild.name)
-        .addField("Created At", message.guild.createdAt)
+        .addField("Created On", message.guild.createdAt)
         .addField("Total Users", message.guild.memberCount)
         .setFooter(`Don't let this information distract you from the fact that Tyler missed out on that thing`, "https://i.imgur.com/LYnOpJE.png")
         message.channel.sendEmbed(embed);

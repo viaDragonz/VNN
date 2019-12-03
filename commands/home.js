@@ -62,4 +62,3 @@ exports.run = (client, message, args) => {
         }, 10000);
     }
 }
-

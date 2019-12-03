@@ -4,7 +4,6 @@ Sentry.init({
     dsn: `${config.dsn}`
 });
 
-
 exports.run = (client, message, args) => {
     const modRole = message.guild.roles.find(role => role.name === "Mods");
     if (!modRole) return console.log("The Mods role does not exist");
