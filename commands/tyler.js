@@ -92,7 +92,6 @@ exports.run = (client, message, args) => {
             "https://media.discordapp.net/attachments/258324481074921472/634210729628663808/image0.jpg",
             "https://cdn.discordapp.com/attachments/258324481074921472/633750524440608768/IMG_20191013_205325_01.jpg",
             "https://cdn.discordapp.com/attachments/258324481074921472/632707762580750344/avagagagaz.PNG",
-            "https://cdn.discordapp.com/attachments/579481334657974273/632337980278964224/000046.jpg",
             "https://cdn.discordapp.com/attachments/628054414170652675/631874464812105763/best.png",
             "https://cdn.discordapp.com/attachments/258324481074921472/637053194220077076/JPEG_20191024_182147.jpg",
             "https://cdn.discordapp.com/attachments/63670672468580766/637053972732969005/EHrUTHbXkAAxwH-.png",
