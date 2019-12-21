@@ -18,6 +18,7 @@ exports.run = (client, message, args) => {
     } else {
         const tyler = [
             "https://media.discordapp.net/attachments/627915749599477770/630499783068483585/images.png",
+            "https://media.discordapp.net/attachments/628054414170652675/657771412332871693/IMG_20190417_175037.jpg",
             "https://cdn.discordapp.com/attachments/628054414170652675/629133018933493790/TylerLookingResonance.png",
             "https://cdn.discordapp.com/attachments/628054414170652675/629132893788045323/weeb2.png",
             "https://cdn.discordapp.com/attachments/628054414170652675/629132846593867807/wtf.png",
