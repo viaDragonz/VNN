@@ -18,7 +18,6 @@ exports.run = (client, message, args) => {
     } else {
         const tyler = [
             "https://media.discordapp.net/attachments/627915749599477770/630499783068483585/images.png",
-            "https://media.discordapp.net/attachments/628054414170652675/657771412332871693/IMG_20190417_175037.jpg",
             "https://cdn.discordapp.com/attachments/628054414170652675/629133018933493790/TylerLookingResonance.png",
             "https://cdn.discordapp.com/attachments/628054414170652675/629132893788045323/weeb2.png",
             "https://cdn.discordapp.com/attachments/628054414170652675/629132846593867807/wtf.png",
@@ -192,6 +191,12 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258449773143523328/650031748184277022/unknown.png",
             "https://cdn.discordapp.com/attachments/258324481074921472/651218236461023233/unknown.png",
             "https://cdn.discordapp.com/attachments/258324481074921472/651219489165410334/image0.png"
+            "https://media.discordapp.net/attachments/628054414170652675/657771412332871693/IMG_20190417_175037.jpg",
+            "https://media.discordapp.net/attachments/258449773143523328/653756924151595058/52324.gif",
+            "https://cdn.discordapp.com/attachments/258449773143523328/652561957685035011/ELHpwmJWsAEP-3Z.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/652617137495474244/ELIS_VRWoAIP_Z8.png",
+            "https://cdn.discordapp.com/attachments/646465749547876374/655932991180242974/JPEG_20191215_191805.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/656588371677675530/output.jpg"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
