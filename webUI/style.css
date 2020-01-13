@@ -10,12 +10,8 @@
 /* =====default style for ALL pages START===== */
 body {
     background-color: darkslateblue;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
     margin: 0;
     font-family: Default Font, Arial, sans-serif;
-/*    overflow-x: hidden;*/
 }
 
 #header {
@@ -35,7 +31,7 @@ body {
 #title {
     background-color: #FFA200;
     overflow: hidden;
-    font-size: 27px;
+    font-size: 22px;
     color: white;
     text-align: center;
 }
@@ -57,7 +53,7 @@ body {
 #title h1 {
     margin: 0 auto;
     text-shadow: 0px 0px 5px #000;
-    animation: rotateVNN ease 9s infinite;
+    animation: rotateVNN ease 10s infinite;
 }
 
 /* menu */
@@ -65,9 +61,9 @@ body {
     margin: 0 auto;
     width: 100%;
     background-color: #1C2135;
-    text-align: center;
     font-family: Quantico, Arial, sans-serif;
-    font-size: 28px;
+    text-align: center;
+    font-size: 25px;
 }
 
 a {
@@ -91,18 +87,23 @@ a {
     color: #000;
 }
 /* menu end */
+
+#sitewrapper {
+    margin: 0px auto;
+    width: 98%;
+    max-width: 1100px;
+    height: 600px;
+}
+
 /* =====default style for all pages END===== */
 
 
 /* =====styles for the Home page START===== */
 #main {
     background-color: darkslateblue;
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
     margin: 15px auto;
-    width: 90%;
-    height: 95%;
+    width: 98%;
+    max-width: 947px;
 }
 
 #textSPY {
@@ -127,8 +128,8 @@ a {
     background-color: black;
     transform: rotate(1deg);
     color: white;
-    width: 305px;
-    margin: 5px auto;
+    width: 325px;
+    margin: 15px auto;
     text-align: center;
     font-size: 16px;
 }
@@ -146,22 +147,17 @@ a {
 #commandsbox ul {
     margin: 0 auto;
     list-style: none;
-    position: relative;
-    top: 10px;
     font-family: Quantico, IBM Plex Sans, Arial, sans-serif;
-    text-align: left;
 }
 
 #ulcommands {
-    padding-left: 125px;
-    padding-right: 125px;
-    font-size: 25px;
+    max-width: 1100px;
+    font-size: 22px;
 }
 
 #commandsbox li {
-    width: 100%;
     padding: 2px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     color: white;
     text-shadow: 1px 1px 3px #000;
 }
@@ -193,7 +189,8 @@ a {
     background-position: center;
     background-blend-mode: color-dodge;
     width: 100%;
-    height: 165px;
+    height: 100%;
+    max-height: 235px;
     margin: 0 auto;
 }
 
@@ -201,58 +198,47 @@ a {
     color: white;
     text-shadow: 3px 3px 2px #000;
     font-size: 55px;
-    margin: 0px;
+    margin: 35px;
     text-align: center;
 }
 /* =====styles for the Commands page END===== */
 
 
 /* =====styles for the Bot Status page START===== */
-#site-wrapper {
-    margin: 0 auto;
-    width: 1000px;
-    height: 620px;
-}
 
 #engineer {
     background-image: url(images/engineer_on.png);
     background-repeat: no-repeat;
     background-size: 45%;
-    background-position: 10px;
-    margin: 5px;
-    height: 590px;
-}
-
-#botstatus-box {
-    margin: 0px auto;
-    background-color: black;
-    width: 75%;
-    height: 200px;
-    color: white;
-    font-size: 61px;
-    font-family: Quantico, Arial, sans-serif;
-    text-align: right;
-    position: relative;
-    top: -60%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    height: 660px;
+    margin: 10 0 0 0;
 }
 
 #botstatus-box-maintext {
-    width: 100%;
     margin: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    font-family: Quantico, Arial, sans-serif;
+    text-align: right;
     position: relative;
-    left: -2.5%;
-    top: 20px;
+    top: -480px;
+    z-index: -1;
 }
 
 #botstatus {
-    width: 100%;
     margin: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    font-family: Quantico, Arial, sans-serif;
+    text-align: right;
     position: relative;
-    top: -205px;
-    left: -2.5%;
+    top: -550px;
+    z-index: -2;
+    
 }
 /* =====styles for the Bot Status page END===== */
 
@@ -301,40 +287,29 @@ a {
 
 
 /* =====styles for the About Us page START===== */
-#sitewrapper {
-    margin: 0px auto;
-    width: 90%;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 595px;
-}
-
 #thepeople {
-    margin: 0 auto;
     background-color: white;
-    width: 100%;
     font-family: Quantico, Arial, sans-serif;
     text-align: center;
-    font-size: 36px;
+    font-size: 38px;
 }
 
 #peoplecontainer {
     background-color: #121530;
-    margin: 25px 0px 25px 0px;
+    margin: 19px 0px 19px 0px;
     width: 100%;
-    height: 51%;
+    height: 45%;
     color: white;
     font-family: Quantico, Arial, sans-serif;
-    text-shadow: 3.5px 3.5px 2.5px #000;
+    text-shadow: 3px 3px 2px #000;
     display: inline-flex;
 }
 
 .peoplethumbs {
     text-align: center;
-    width: 100%;
+    width: 25%;
     margin: 10px;
-    font-size: 20px;
-    text-align: center;
+    display: flex;
 }
 
 .peoplethumbs:hover {
@@ -343,38 +318,22 @@ a {
 }
 
 .peoplephoto {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     width: 100%;
     height: 100%;
 }
 
-h2 {
-    margin: 0px;
+.peoplename {
+    margin: 0;
     width: 100%;
-    font-size: contain;
-    letter-spacing: 1px;
-    text-align: center;
+    font-size: 30px;
 }
 
-#peopledescriptionACFC {
-    padding-top: 170px;
+.peopledescription {
+    padding-top: 150px;
     width: 100%;
-}
-
-#peopledescriptionJOTA {
-    padding-top: 170px;
-    width: 100%;
-}
-
-#peopledescription2EGGS {
-    padding-top: 170px;
-    width: 100%;
-}
-
-#peopledescriptionTODD {
-    padding-top: 170px;
-    width: 100%;
+    font-size: 18px;
 }
 /* =====styles for the About Us page END===== */
