@@ -128,10 +128,10 @@ a {
     background-color: black;
     transform: rotate(1deg);
     color: white;
-    width: 325px;
+    width: 100%;
+    max-width: 325px;
     margin: 15px auto;
     text-align: center;
-    font-size: 16px;
 }
 
 #commandstitle h2 {
@@ -142,6 +142,7 @@ a {
 #commandstitle p {
     margin: 0;
     padding: 5px;
+    font-size: 16px;
 }
 
 #commandsbox ul {
@@ -197,8 +198,8 @@ a {
 #tylertext {
     color: white;
     text-shadow: 3px 3px 2px #000;
-    font-size: 55px;
-    margin: 35px;
+    font-size: 50px;
+    margin: 0;
     text-align: center;
 }
 /* =====styles for the Commands page END===== */
@@ -301,7 +302,7 @@ a {
     height: 45%;
     color: white;
     font-family: Quantico, Arial, sans-serif;
-    text-shadow: 3px 3px 2px #000;
+    text-shadow: 2px 2px 1px #000;
     display: inline-flex;
 }
 
@@ -310,6 +311,7 @@ a {
     width: 25%;
     margin: 10px;
     display: flex;
+    transition: 0.2s;
 }
 
 .peoplethumbs:hover {
