@@ -196,7 +196,29 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258449773143523328/652561957685035011/ELHpwmJWsAEP-3Z.png",
             "https://cdn.discordapp.com/attachments/258449773143523328/652617137495474244/ELIS_VRWoAIP_Z8.png",
             "https://cdn.discordapp.com/attachments/646465749547876374/655932991180242974/JPEG_20191215_191805.jpg",
-            "https://cdn.discordapp.com/attachments/258449773143523328/656588371677675530/output.jpg"
+            "https://cdn.discordapp.com/attachments/258449773143523328/656588371677675530/output.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/661005817708937226/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/661089358778204201/EM_VqH_X0AEJxqt.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/663530348885311509/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/667688666285604885/7oSTKCq.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/667805957203558410/IMG_20200117_200146.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/664562575442313251/IMG_20200108_142323.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/669110947427647498/unknown.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/669038182641434644/unknown.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/668927692023791616/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/668926587034664981/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/668926188072468480/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258333523591561217/666123374296170547/red_speculation.png",
+            "https://cdn.discordapp.com/attachments/258333523591561217/666123381237612554/hd_1.png",
+            "https://cdn.discordapp.com/attachments/258333523591561217/666123377089576961/green_speculation.png",
+            "https://cdn.discordapp.com/attachments/258449773143523328/664204318743855156/JPEG_20200107_153018.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/659954668323209218/IMG_20191226_154726_01.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/658076824881856519/JPEG_20191221_174142.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/655924754959826985/IMG_20191215_182428.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/651457611656593448/JPEG_20191203_111946.jpg",
+            "https://cdn.discordapp.com/attachments/258324481074921472/643291640978473001/IMG_20191110_193235.jpg",
+            "https://cdn.discordapp.com/attachments/635102375048380436/640265775961341983/unknown.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/638819489672200220/2019-10-28_06.36.10_1.jpg"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
