@@ -19,7 +19,11 @@ exports.run = (client, message, args) => {
             "Fish? Maybe next time.",
             "No signals of fish.",
             "Fish? Try again.",
-            "ERROR 404 - FISH WAS NOT FOUND IN THIS DIRECTORY"
+            "ERROR 404 - FISH WAS NOT FOUND IN THIS DIRECTORY",
+            "This is what you get for asking for a fish command!",
+            "Where are the fish?! Not here!!",
+            "Fiiiiissssshhhhh. Fish fish fish. FIIIISHHHH.",
+            "Fish be fish is fish be? No. This must be fake"
         ];
         message.channel.send(`${fish[Math.floor(Math.random() * fish.length)]}`)
         talkedRecently.add(message.author.id);
