@@ -218,7 +218,10 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258324481074921472/651457611656593448/JPEG_20191203_111946.jpg",
             "https://cdn.discordapp.com/attachments/258324481074921472/643291640978473001/IMG_20191110_193235.jpg",
             "https://cdn.discordapp.com/attachments/628054414170652675/669386993779867688/unknown.png",
-            "https://cdn.discordapp.com/attachments/258324481074921472/638819489672200220/2019-10-28_06.36.10_1.jpg"
+            "https://cdn.discordapp.com/attachments/258324481074921472/638819489672200220/2019-10-28_06.36.10_1.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/672959980034326529/PSX_20200131_220201.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/672959970605793290/FaceApp_1580504642954.jpg",
+            "https://cdn.discordapp.com/attachments/258449773143523328/672959237168562186/screenshot-clips.twitch.tv-2020.01.png"
         ];
         message.channel.send("", {
             file: `${tyler[Math.floor(Math.random() * tyler.length)]}`
