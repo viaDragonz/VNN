@@ -83,19 +83,25 @@ Post a random drawing of Tyler McVicker.
 ## .catfact
 Post a random cat fact!
 
-## .ishlvrout
-Is HLVR out? 
-
-![Perhaps](https://i.imgur.com/oFNRw4u.png)
-
 ## .spiderman
 Post a random Spider-Man quote from the Sam Raimi/Tobey Maguire trilogy. Pizza time!
 
 ## .help
 When you people need help.
 
-## .heavy
-Post a random quote from Heavy.
+## .tf2quote
+Post a rando quote from TF2.
+
+## .fish
+Post a random fish image. (Thanks Adoring Fan from Oblivion#2916 for compiling the images!)
+
+## .userinfo
+Get the information for you account.
+
+## .serverinfo
+Get the information for the current discord server.
+
+
 
 <hr>
 
