@@ -81,7 +81,9 @@ exports.run = (client, message, args) => {
             "https://i.kym-cdn.com/photos/images/original/000/943/150/51e.jpg",
             "https://images.csmonitor.com/csm/2019/07/0801%20Sturgeon%20CLOSE.jpg"
             ];
-        message.channel.send(`${fish[Math.floor(Math.random() * fish.length)]}`)
+            message.channel.send("", {
+                file: `${fish[Math.floor(Math.random() * fish.length)]}`
+            });
         talkedRecently.add(message.author.id);
         setTimeout(() => {
             talkedRecently.delete(message.author.id);
