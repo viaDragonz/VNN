@@ -70,7 +70,8 @@ exports.run = (client, message, args) => {
             "https://cdn.discordapp.com/attachments/258324481074921472/647264688912072735/tyler_madcry.png",
             "https://cdn.discordapp.com/attachments/258324481074921472/647265131893620747/tyler_bruh.png",
             "https://cdn.discordapp.com/attachments/258324481074921472/647265499327234049/tyler_alyx.png",
-            "https://cdn.discordapp.com/attachments/258324481074921472/648276554127769601/bruh.png"
+            "https://cdn.discordapp.com/attachments/258324481074921472/648276554127769601/bruh.png",
+            "https://cdn.discordapp.com/attachments/258324481074921472/680896581666340891/tyler.png"
         ];
         message.channel.send("", {
             file: `${tylerdrawing[Math.floor(Math.random() * tylerdrawing.length)]}`
