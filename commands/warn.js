@@ -5,16 +5,16 @@ Sentry.init({
 });
 
 const uuidv4 = require('uuid/v4');
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    port: '3306',
-    user: 'root',
-    password: `${config.dbpassword}`,
-    database: 'modbot',
-    charset: 'utf8mb4'
-})
-exports.run = (client, message, [mention, ...reason]) => {
+//const mysql = require('mysql');
+//const connection = mysql.createConnection({
+//    host: 'localhost',
+//    port: '3306',
+//    user: 'root',
+//    password: `${config.dbpassword}`,
+//    database: 'modbot',
+//    charset: 'utf8mb4'
+//})
+//exports.run = (client, message, [mention, ...reason]) => {
     const modRole = message.guild.roles.find(role => role.name === "Mods");
     if (!modRole) return console.log("The Mods role does not exist");
     if (!message.member.roles.has(modRole.id)) return message.reply("you can't use this command.");
@@ -27,7 +27,7 @@ exports.run = (client, message, [mention, ...reason]) => {
         reason: `${reason.join(" ")}`,
         date: `${new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')}`
     }
-    connection.query('INSERT INTO warnings SET ?', tolog)
+    //connection.query('INSERT INTO warnings SET ?', tolog)
     client.channels.get("627705786667106304").send(`\*\*A USER HAS BEEN WARNED \*\* \n ${member.user.username} was warned by ${message.author.username} \n \*\*Reason\:\*\*\n ${reason.join(" ")}`)
     message.channel.send(`<@${member.user.id}> has been warned!`)
 };
