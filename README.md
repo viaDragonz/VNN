@@ -41,3 +41,20 @@ Todd, the guy who shits out commands every once in a while. Working on a few thi
 "wait, i broke the bot?"
 
 <hr>
+
+## For future contributors, 
+here are the tools I (acfc) use my self,
+To manage commits and other git tools I use [Sublime Merge](https://www.sublimemerge.com/)
+If you plan on developing new commands I would recommend [Visual Studio Code](https://code.visualstudio.com/)
+But sometimes your just planning on adding new images as such to a command like tyler.js then you can use anything like [notepadd++](https://notepad-plus-plus.org/) or [Sublime Text](https://www.sublimetext.com/).
+
+Now I assume you have prior knowledge when it comes to working with discord bots so ill leave the bot account stuff to you to do. Just search "Make Bot Account on discord"
+
+Now once you clone the bot you will need [NodeJS](https://node.js.org/) as thats what the bots written in.
+And for windows users you should get [Git Bash](https://git-scm.com/downloads) So you can have a set of linux tools at hand.
+
+Now that you have the bot cloned, node.js installed, and the config configured with the bot account. all you need to do now is to run 
+```npm install``
+This will install all the dependencies needed for the bot. 
+
+Congrats you have a development ready to make and test your changes. 
