@@ -57,4 +57,4 @@ Now that you have the bot cloned, node.js installed, and the config configured w
 ```npm install```
 This will install all the dependencies needed for the bot. 
 
-Congrats you have a development ready to make and test your changes. 
+Congrats you have a development environment ready to make and test your changes. 
