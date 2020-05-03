@@ -99,7 +99,7 @@ exports.run = (client, message, args) => {
             "https://qbi.uq.edu.au/files/44083/deepfish_with_lights_illustration_hero.jpg",
             "https://cdn.discordapp.com/attachments/258412663573446657/706066212995596348/image0.jpg",
             "https://cdn.discordapp.com/attachments/258412663573446657/706066213247385671/image1.jpg",
-            "https://cdn.discordapp.com/attachments/258412663573446657/706066213616222218/image2.jpg",
+            "https://cdn.discordapp.com/attachments/258412663573446657/706066213616222218/image2.jpg"
             ];
             message.channel.send("", {
                 file: `${fish[Math.floor(Math.random() * fish.length)]}`
