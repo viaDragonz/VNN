@@ -41,37 +41,3 @@ Todd, the guy who shits out commands every once in a while. Working on a few thi
 "wait, i broke the bot?"
 
 <hr>
-
-# The Dumbass Awards
-### **October 24, 2019 -- Thursday**
-
-**Jota** forgot a `,` in his json and caused the bot to brick for a while before it could be restarted.
-##### **5 dumbass points**
-
-### **October 27, 2019 -- Sunday**
-
-**aidenjay345** fucked up a url in the readme TWICE. Like damn.
-##### **10 dumbass points**
-
-### **November 3, 2019 -- Sunday**
-
-**toddhowardguild** forgot a `"` at the end of a line in his json and caused the bot to brick for a while before it could be restarted.
-##### **5 dumbass points**
-
-*5 points for each fuck-up*
-
-# Points
-- **ACFC**
-10 Points
-
-- **2Eggssss**
-0 Points
-
-- **Thuby**
-0 Points
-
-- **toddhowardguild**
-5 points
-
-- **Jota**
-5 Points
