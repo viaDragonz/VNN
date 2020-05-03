@@ -54,7 +54,7 @@ Now once you clone the bot you will need [NodeJS](https://node.js.org/) as thats
 And for windows users you should get [Git Bash](https://git-scm.com/downloads) So you can have a set of linux tools at hand.
 
 Now that you have the bot cloned, node.js installed, and the config configured with the bot account. all you need to do now is to run 
-```npm install``
+```npm install```
 This will install all the dependencies needed for the bot. 
 
 Congrats you have a development ready to make and test your changes. 
