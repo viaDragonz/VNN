@@ -43,7 +43,7 @@ Todd, the guy who shits out commands every once in a while. Working on a few thi
 <hr>
 
 ## For future contributors, 
-here are the tools I (acfc) use my self,
+here are the tools I (acfc) use my self
 To manage commits and other git tools I use [Sublime Merge](https://www.sublimemerge.com/)
 If you plan on developing new commands I would recommend [Visual Studio Code](https://code.visualstudio.com/)
 But sometimes your just planning on adding new images as such to a command like tyler.js then you can use anything like [notepadd++](https://notepad-plus-plus.org/) or [Sublime Text](https://www.sublimetext.com/).
