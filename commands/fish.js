@@ -11,7 +11,7 @@ const talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
     if (talkedRecently.has(message.author.id)) {
-        message.channel.send("Wait 10 seconds before trying this again. - " + message.author);
+        message.channel.send("Wait 10 seconds before fishing again. - " + message.author);
     } else {
         const fish = [
             "https://www.anglersjournal.com/.image/t_share/MTY3MzMyMzQ1OTUzNjU4NzA1/02_payara.jpg",
@@ -54,7 +54,7 @@ exports.run = (client, message, args) => {
             "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/dinosaur_fish-770x433.png",
             "https://www.getfish.com.au/wp-content/uploads/2018/02/valentines-day-dinner-baked-salmon-recipe.jpg",
             "https://i.redd.it/7g22muud7vr21.jpg",
-            "https://cdn.newsapi.com.au/image/v1/ee771a5ac4268d923be28709a8175db4",
+            "https://cdn.discordapp.com/attachments/643282422569500682/699448898946859048/ee771a5ac4268d923be28709a8175db4.png",
             "https://cdn.newsapi.com.au/image/v1/8c9ee67a38ebcf0e348154b2b49fec27",
             "https://i.redd.it/bvmxrvfuoka41.jpg",
             "https://cdn.shopify.com/s/files/1/0855/3388/products/6335_grande.jpeg",
@@ -79,7 +79,27 @@ exports.run = (client, message, args) => {
             "https://i.redd.it/rta1kcxdrqe31.jpg",
             "https://kubrick.htvapps.com/htv-prod/ibmig/cms/image/wcvb/28188742-28188742.jpg",
             "https://i.kym-cdn.com/photos/images/original/000/943/150/51e.jpg",
-            "https://images.csmonitor.com/csm/2019/07/0801%20Sturgeon%20CLOSE.jpg"
+            "https://images.csmonitor.com/csm/2019/07/0801%20Sturgeon%20CLOSE.jpg",
+            "https://cdn.discordapp.com/attachments/678075830810705941/699451363255386192/sap.png",
+            "https://cdn.discordapp.com/attachments/643282422569500682/699453207532929097/obs.png",
+            "https://i.pinimg.com/originals/19/6c/90/196c90d074dafe974f97d5c4ea605838.jpg",
+            "https://i.pinimg.com/originals/b5/2f/47/b52f475bdb0c9855b5501cb427d1b3d5.jpg",
+            "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+            "https://thumbs.gfycat.com/BiodegradableAdoredCoypu-max-1mb.gif",
+            "https://media.treehugger.com/assets/images/2019/09/lobstersculpture.jpg.860x0_q70_crop-scale.jpg",
+            "https://deliverlogic-cravedel.s3.amazonaws.com/logos/front/3921.jpg",
+            "https://vignette.wikia.nocookie.net/bakugan/images/9/9e/Albumf44049n293698-1-.png",
+            "https://i.redd.it/0f39388zm4y31.jpg",
+            "https://static.fjcdn.com/pictures/Epic_fe5d57_2289809.jpg",
+            "https://images.earthtouchnews.com/media/1947051/dunkleosteus-attack_2016_11_01.jpg",
+            "https://newsinstact.com/wp-content/uploads/2019/09/dinosaur-fish.png",
+            "https://static.boredpanda.com/blog/wp-content/uploads/2016/11/dog-kissing-fish-photoshop-battle-18-581df82870819__605.jpg",
+            "https://theblogimages.adobe.com/wp-content/uploads/2018/12/yVtBOh7-e1545265113463.jpg",
+            "https://media.proprofs.com/images/QM/user_images/2503852/1561454865.jpg",
+            "https://qbi.uq.edu.au/files/44083/deepfish_with_lights_illustration_hero.jpg",
+            "https://cdn.discordapp.com/attachments/258412663573446657/706066212995596348/image0.jpg",
+            "https://cdn.discordapp.com/attachments/258412663573446657/706066213247385671/image1.jpg",
+            "https://cdn.discordapp.com/attachments/258412663573446657/706066213616222218/image2.jpg"
             ];
             message.channel.send("", {
                 file: `${fish[Math.floor(Math.random() * fish.length)]}`
